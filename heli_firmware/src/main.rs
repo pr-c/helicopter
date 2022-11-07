@@ -94,10 +94,10 @@ fn main() -> ! {
     sensor.initialize_dmp(&mut delay).unwrap();
     sensor.enable_dmp().unwrap();
     hprintln!("Sensor configured.");
-    let mut nrf24 = NRF24L01::new(ce_pin, spi_cs_pin, spi).unwrap();
-    configure_nrf24(&mut nrf24).unwrap();
-    hprintln!("Transceiver object created.");
+    let nrf24 = NRF24L01::new(ce_pin, spi_cs_pin, spi).unwrap();
     let mut nrf24_rx = nrf24.rx().unwrap();
+    hprintln!("Transceiver object created.");
+    configure_nrf24(&mut nrf24_rx).unwrap();
     hprintln!("---- Initialized ----");
 
 
@@ -108,23 +108,19 @@ fn main() -> ! {
                     hprintln!("{}", input.get_pitch());
                     pwm1.set_duty(input.get_pitch() / 65535 * max);
                 }
-
-
             }
-        } else {
-            hprintln!("none");
         }
     }
 }
 
 fn configure_nrf24<T: Configuration>(nrf24: &mut T) -> Result<(), <<T as Configuration>::Inner as Device>::Error> {
-    nrf24.set_frequency(0)?;
+    nrf24.set_frequency(8)?;
     nrf24.set_rf(&DataRate::R2Mbps, 0)?;
     nrf24.set_crc(CrcMode::OneByte)?;
     nrf24.set_rx_addr(0, &b"fnord"[..])?;
     nrf24.set_auto_retransmit(0, 0)?;
     nrf24.set_auto_ack(&[false; 6])?;
-    nrf24.set_pipes_rx_enable(&[true, false, false, false, false, false])?;
+    nrf24.set_pipes_rx_enable(&[true; 6])?;
     nrf24.set_pipes_rx_lengths(&[None; 6])?;
     Ok(())
 }
