@@ -105,7 +105,7 @@ fn main() -> ! {
         if nrf24_rx.can_read().unwrap().is_some() {
             if let Ok(payload) = nrf24_rx.read() {
                 if let Ok((input, _)) = postcard::take_from_bytes::<JoystickInput>(&*payload) {
-                    pwm1.set_duty((input.get_pitch() as f64 / 65535 as f64 * max as f64) as u16);
+                    pwm1.set_duty((input.get_pitch() as f64 / 4000 as f64 * max as f64) as u16);
                 }
             }
         }
