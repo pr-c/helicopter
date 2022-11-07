@@ -102,7 +102,7 @@ fn main() -> ! {
 
 
     loop {
-        if let Ok(Some(_)) = nrf24_rx.can_read() {
+        if nrf24_rx.can_read().unwrap().is_some() {
             if let Ok(payload) = nrf24_rx.read() {
                 if let Ok((input, _)) = postcard::take_from_bytes::<JoystickInput>(&*payload) {
                     hprintln!("{}", input.get_pitch());
@@ -111,6 +111,8 @@ fn main() -> ! {
 
 
             }
+        } else {
+            hprintln!("none");
         }
     }
 }
