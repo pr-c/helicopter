@@ -105,6 +105,7 @@ fn main() -> ! {
         if let Ok(Some(0)) = nrf24_rx.can_read() {
             if let Ok(payload) = nrf24_rx.read() {
                 if let Ok((input, _)) = postcard::take_from_bytes::<JoystickInput>(&*payload) {
+                    hprintln!("{}", input.get_pitch());
                     pwm1.set_duty(input.get_pitch() / 65535 * max);
                 }
 
