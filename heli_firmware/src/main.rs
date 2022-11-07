@@ -6,6 +6,7 @@
 #![no_main]
 #![no_std]
 
+use protocol::JoystickInput;
 use panic_halt as _;
 use cortex_m_rt::entry;
 use cortex_m_semihosting::hprintln;
@@ -14,14 +15,12 @@ use stm32f1xx_hal::flash::FlashExt;
 use stm32f1xx_hal::gpio::GpioExt;
 use stm32f1xx_hal::i2c::{BlockingI2c, DutyCycle};
 use stm32f1xx_hal::{i2c, pac, spi};
-use stm32f1xx_hal::prelude::{_embedded_hal_blocking_spi_Write, _fugit_RateExtU32};
+use stm32f1xx_hal::prelude::_fugit_RateExtU32;
 use stm32f1xx_hal::rcc::RccExt;
 use mpu6050_dmp::{sensor::Mpu6050, address::Address};
-use mpu6050_dmp::euler::Euler;
-use mpu6050_dmp::quaternion::Quaternion;
 use stm32f1xx_hal::spi::{Phase, Polarity, Spi};
 use stm32f1xx_hal::timer::{Channel, SysTimerExt, Tim2NoRemap, Timer};
-use embedded_nrf24l01::{NRF24L01, Configuration, DataRate, CrcMode};
+use embedded_nrf24l01::{NRF24L01, Configuration, DataRate, CrcMode, Device};
 
 const PI: f32 = 3.1415927;
 const PI2_INVERTED: f32 = 1.0 / (2.0 * PI);
@@ -59,7 +58,7 @@ fn main() -> ! {
 
     let ce_pin = gpioa.pa9.into_push_pull_output(&mut gpioa.crh);
 
-    let mut spi = Spi::spi1(device_peripherals.SPI1, (spi_sck_pin, spi_miso_pin, spi_mosi_pin), &mut afio.mapr, SPI_MODE, 1.MHz(), clock);
+    let spi = Spi::spi1(device_peripherals.SPI1, (spi_sck_pin, spi_miso_pin, spi_mosi_pin), &mut afio.mapr, SPI_MODE, 1.MHz(), clock);
 
     let mut pwm = Timer::new(device_peripherals.TIM2, &clock).pwm_hz::<Tim2NoRemap, _, _>((pwm_pin_pa0, pwm_pin_pa1), &mut afio.mapr, 1.kHz());
     pwm.enable(Channel::C1);
@@ -95,34 +94,34 @@ fn main() -> ! {
     sensor.initialize_dmp(&mut delay).unwrap();
     sensor.enable_dmp().unwrap();
     hprintln!("Sensor configured.");
-
-    spi.write("test".as_bytes()).unwrap();
-    hprintln!("SPI WRIITTEN");
-
-    let nrf24_result = NRF24L01::new(ce_pin, spi_cs_pin, spi);
-    hprintln!("NO PANIC DIGGA");
-    let nrf24 = nrf24_result.unwrap();
+    let mut nrf24 = NRF24L01::new(ce_pin, spi_cs_pin, spi).unwrap();
+    configure_nrf24(&mut nrf24).unwrap();
     hprintln!("Transceiver object created.");
     let mut nrf24_rx = nrf24.rx().unwrap();
-    nrf24_rx.set_frequency(0).unwrap();
-    nrf24_rx.set_rf(&DataRate::R2Mbps, 0).unwrap();
-    nrf24_rx.set_crc(CrcMode::TwoBytes).unwrap();
-
     hprintln!("---- Initialized ----");
 
 
     loop {
-        let len = sensor.get_fifo_count().unwrap();
-        if len >= 28 {
-            let mut b: [u8; 28] = [0; 28];
-            let buf = sensor.read_fifo(&mut b).unwrap();
-            let q = Quaternion::from_bytes(&buf[..16]).unwrap().normalize();
-            let euler = Euler::from(q);
+        if let Ok(Some(0)) = nrf24_rx.can_read() {
+            if let Ok(payload) = nrf24_rx.read() {
+                if let Ok((input, _)) = postcard::take_from_bytes::<JoystickInput>(&*payload) {
+                    pwm1.set_duty(input.get_pitch() / 65535 * max);
+                }
 
-            let a = (euler.phi as f32 + PI) * PI2_INVERTED * max as f32;
-            let b = (euler.psi as f32 + PI) * PI2_INVERTED * max as f32;
-            pwm1.set_duty(a as u16);
-            pwm2.set_duty(b as u16);
+
+            }
         }
     }
+}
+
+fn configure_nrf24<T: Configuration>(nrf24: &mut T) -> Result<(), <<T as Configuration>::Inner as Device>::Error> {
+    nrf24.set_frequency(8)?;
+    nrf24.set_rf(&DataRate::R2Mbps, 3)?;
+    nrf24.set_crc(CrcMode::OneByte)?;
+    nrf24.set_rx_addr(0, b"heli")?;
+    nrf24.set_auto_retransmit(0, 0)?;
+    nrf24.set_auto_ack(&[true; 6])?;
+    nrf24.set_pipes_rx_enable(&[true, false, false, false, false, false])?;
+    nrf24.set_pipes_rx_lengths(&[None; 6])?;
+    Ok(())
 }
