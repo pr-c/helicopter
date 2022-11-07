@@ -37,7 +37,7 @@ fn main() -> ! {
     let mut ch0 = gpiob.pb0.into_analog(&mut gpiob.crl);
 
     let mut timer = Timer::syst(core_peripherals.SYST, &clock).counter_hz();
-    timer.start(1.Hz()).unwrap();
+    timer.start(60.Hz()).unwrap();
 
 
     let spi_sck_pin = gpioa.pa5.into_alternate_push_pull(&mut gpioa.crl);
@@ -63,9 +63,7 @@ fn main() -> ! {
         let object = JoystickInput::new(pitch);
 
         postcard::to_slice(&object, &mut binary).unwrap();
-        if nrf24_tx.send(&binary).is_ok() {
-            hprintln!("Sent");
-        }
+        let _ = nrf24_tx.send(&binary);
 
     }
 }
