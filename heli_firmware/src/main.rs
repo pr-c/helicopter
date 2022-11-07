@@ -117,9 +117,9 @@ fn main() -> ! {
 
 fn configure_nrf24<T: Configuration>(nrf24: &mut T) -> Result<(), <<T as Configuration>::Inner as Device>::Error> {
     nrf24.set_frequency(0)?;
-    nrf24.set_rf(&DataRate::R2Mbps, 3)?;
+    nrf24.set_rf(&DataRate::R2Mbps, 0)?;
     nrf24.set_crc(CrcMode::OneByte)?;
-    nrf24.set_rx_addr(0, b"heli")?;
+    nrf24.set_rx_addr(0, &b"fnord"[..])?;
     nrf24.set_auto_retransmit(0, 0)?;
     nrf24.set_auto_ack(&[true; 6])?;
     nrf24.set_pipes_rx_enable(&[true, false, false, false, false, false])?;

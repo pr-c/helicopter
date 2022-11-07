@@ -37,7 +37,7 @@ fn main() -> ! {
     let mut ch0 = gpiob.pb0.into_analog(&mut gpiob.crl);
 
     let mut timer = Timer::syst(core_peripherals.SYST, &clock).counter_hz();
-    timer.start(2.Hz()).unwrap();
+    timer.start(1.Hz()).unwrap();
 
 
     let spi_sck_pin = gpioa.pa5.into_alternate_push_pull(&mut gpioa.crl);
@@ -72,9 +72,9 @@ fn main() -> ! {
 
 fn configure_nrf24<T: Configuration>(nrf24: &mut T) -> Result<(), <<T as Configuration>::Inner as Device>::Error> {
     nrf24.set_frequency(0)?;
-    nrf24.set_rf(&DataRate::R2Mbps, 3)?;
+    nrf24.set_rf(&DataRate::R2Mbps, 0)?;
     nrf24.set_crc(CrcMode::OneByte)?;
-    nrf24.set_tx_addr(b"heli")?;
+    nrf24.set_tx_addr(&b"fnord"[..])?;
     nrf24.set_auto_ack(&[true; 6])?;
     nrf24.set_auto_retransmit(0, 0)?;
     Ok(())
