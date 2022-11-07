@@ -102,7 +102,7 @@ fn main() -> ! {
 
 
     loop {
-        if let Ok(Some(0)) = nrf24_rx.can_read() {
+        if let Ok(Some(_)) = nrf24_rx.can_read() {
             if let Ok(payload) = nrf24_rx.read() {
                 if let Ok((input, _)) = postcard::take_from_bytes::<JoystickInput>(&*payload) {
                     hprintln!("{}", input.get_pitch());
@@ -121,7 +121,7 @@ fn configure_nrf24<T: Configuration>(nrf24: &mut T) -> Result<(), <<T as Configu
     nrf24.set_crc(CrcMode::OneByte)?;
     nrf24.set_rx_addr(0, &b"fnord"[..])?;
     nrf24.set_auto_retransmit(0, 0)?;
-    nrf24.set_auto_ack(&[true; 6])?;
+    nrf24.set_auto_ack(&[false; 6])?;
     nrf24.set_pipes_rx_enable(&[true, false, false, false, false, false])?;
     nrf24.set_pipes_rx_lengths(&[None; 6])?;
     Ok(())

@@ -75,7 +75,7 @@ fn configure_nrf24<T: Configuration>(nrf24: &mut T) -> Result<(), <<T as Configu
     nrf24.set_rf(&DataRate::R2Mbps, 0)?;
     nrf24.set_crc(CrcMode::OneByte)?;
     nrf24.set_tx_addr(&b"fnord"[..])?;
-    nrf24.set_auto_ack(&[true; 6])?;
+    nrf24.set_auto_ack(&[false; 6])?;
     nrf24.set_auto_retransmit(0, 0)?;
     Ok(())
 }
