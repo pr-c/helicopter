@@ -324,6 +324,10 @@
     [
       "c5583cdf-ca59-48f7-a91f-20c1806ad1c1",
       "Main Motor"
+    ],
+    [
+      "ebc292d5-2582-4099-8764-6cb28f1c8a9b",
+      "Back Motor"
     ]
   ],
   "text_variables": {}
