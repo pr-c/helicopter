@@ -67,8 +67,8 @@ fn main() -> ! {
     let max = pwm.get_max_duty();
 
     let (mut pwm1, mut pwm2) = pwm.split();
-    pwm1.set_duty(max / 2);
-    pwm2.set_duty(max / 4);
+    pwm1.set_duty(0);
+    pwm2.set_duty(0);
 
     let i2c = BlockingI2c::i2c1(
         device_peripherals.I2C1,
