@@ -139,7 +139,7 @@
   (symbol (lib_id "ICs:NEO-M9N-00B") (at 155.575 90.805 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 5471ff0f-1b62-4332-bec3-f3a5e64359b2)
-    (property "Reference" "U?" (id 0) (at 155.575 59.1652 0))
+    (property "Reference" "U4" (id 0) (at 155.575 59.1652 0))
     (property "Value" "NEO-M9N-00B" (id 1) (at 155.575 61.7021 0))
     (property "Footprint" "ICs:XCVR_NEO-M9N-00B" (id 2) (at 155.575 90.805 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
