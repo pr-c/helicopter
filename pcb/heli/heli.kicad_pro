@@ -435,6 +435,14 @@
     [
       "ebc292d5-2582-4099-8764-6cb28f1c8a9b",
       "Back Motor"
+    ],
+    [
+      "ff163e09-1c9a-4e9f-9fc2-cd2f8ec1c6f1",
+      "GPS"
+    ],
+    [
+      "8972c389-56a6-466a-9271-66b0ec918c0e",
+      "Radio"
     ]
   ],
   "text_variables": {}
