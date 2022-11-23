@@ -732,7 +732,7 @@
     (uuid 20c969fe-611b-4c16-bd51-c9b74f3165f8)
     (property "Reference" "Y2" (id 0) (at 147.32 69.9348 0))
     (property "Value" "16MHz" (id 1) (at 147.32 72.4717 0))
-    (property "Footprint" "Crystal:Crystal_HC49-4H_Vertical" (id 2) (at 147.32 76.2 0)
+    (property "Footprint" "Crystal:Crystal_SMD_HC49-SD" (id 2) (at 147.32 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 147.32 76.2 0)

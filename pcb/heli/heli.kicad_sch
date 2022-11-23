@@ -2320,7 +2320,7 @@
     (property "Value" "8MHz" (id 1) (at 121.285 61.5949 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Crystal:Crystal_HC49-4H_Vertical" (id 2) (at 116.84 60.325 0)
+    (property "Footprint" "Crystal:Crystal_SMD_HC49-SD" (id 2) (at 116.84 60.325 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 116.84 60.325 0)
@@ -3124,6 +3124,21 @@
     (path "/8972c389-56a6-466a-9271-66b0ec918c0e/0f97fc74-6859-4297-9065-91baf6ba26f0"
       (reference "#PWR0113") (unit 1) (value "GND") (footprint "")
     )
+    (path "/ff163e09-1c9a-4e9f-9fc2-cd2f8ec1c6f1/361a901c-4a32-4ced-b2fe-ab2844887a0a"
+      (reference "#PWR0114") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/ff163e09-1c9a-4e9f-9fc2-cd2f8ec1c6f1/8549edc8-7868-445e-8e60-f5cdb289851b"
+      (reference "#PWR0115") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/ff163e09-1c9a-4e9f-9fc2-cd2f8ec1c6f1/c95310af-53ca-4059-86cc-278f5cf1ab51"
+      (reference "#PWR0116") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/ff163e09-1c9a-4e9f-9fc2-cd2f8ec1c6f1/2487208e-e563-4264-98f5-c6523d50a5c6"
+      (reference "#PWR0117") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/ff163e09-1c9a-4e9f-9fc2-cd2f8ec1c6f1/857ae3b4-3ab8-49f2-ba21-4f6834532cc8"
+      (reference "#PWR0118") (unit 1) (value "GND") (footprint "")
+    )
     (path "/a695f418-bc3a-4046-8cf8-067ebffee1a8"
       (reference "C1") (unit 1) (value "10uF") (footprint "Capacitor_SMD:CP_Elec_4x5.4")
     )
@@ -3195,6 +3210,12 @@
     )
     (path "/8972c389-56a6-466a-9271-66b0ec918c0e/ff63a2d5-b023-4db7-a35e-d62fa7f41205"
       (reference "C24") (unit 1) (value "1nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/ff163e09-1c9a-4e9f-9fc2-cd2f8ec1c6f1/2efc0c9c-1f91-41ea-81d3-ea526dfa618c"
+      (reference "C25") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/ff163e09-1c9a-4e9f-9fc2-cd2f8ec1c6f1/0950225b-258f-431f-ac35-977d3ffe7815"
+      (reference "C26") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/b28a0e5f-aecf-489c-9fc5-7ef0cd88e703"
       (reference "D1") (unit 1) (value "LED") (footprint "LED_SMD:LED_0603_1608Metric")
@@ -3305,10 +3326,10 @@
       (reference "U5") (unit 1) (value "NRF24L01") (footprint "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm")
     )
     (path "/7167ad50-a0fe-4dd3-bd80-1cc072116538"
-      (reference "Y1") (unit 1) (value "8MHz") (footprint "Crystal:Crystal_HC49-4H_Vertical")
+      (reference "Y1") (unit 1) (value "8MHz") (footprint "Crystal:Crystal_SMD_HC49-SD")
     )
     (path "/8972c389-56a6-466a-9271-66b0ec918c0e/20c969fe-611b-4c16-bd51-c9b74f3165f8"
-      (reference "Y2") (unit 1) (value "16MHz") (footprint "Crystal:Crystal_HC49-4H_Vertical")
+      (reference "Y2") (unit 1) (value "16MHz") (footprint "Crystal:Crystal_SMD_HC49-SD")
     )
   )
 )
