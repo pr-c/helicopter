@@ -1,13 +1,9 @@
 {
   "board": {
-    "active_layer": 31,
-    "active_layer_preset": "All Copper Layers",
+    "active_layer": 2,
+    "active_layer_preset": "",
     "auto_track_width": true,
-    "hidden_nets": [
-      "GND",
-      "3.3V",
-      "7.4V"
-    ],
+    "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
@@ -66,7 +62,7 @@
       35,
       36
     ],
-    "visible_layers": "0001000_ffffffff",
+    "visible_layers": "000d000_ffffffff",
     "zone_display_mode": 1
   },
   "meta": {
