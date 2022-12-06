@@ -121,12 +121,17 @@
       "track_widths": [
         0.0,
         0.5,
-        1.0
+        1.0,
+        2.0
       ],
       "via_dimensions": [
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.25
         },
         {
           "diameter": 0.7,
@@ -359,7 +364,7 @@
     "classes": [
       {
         "bus_width": 12.0,
-        "clearance": 0.2,
+        "clearance": 0.0,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
