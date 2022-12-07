@@ -3223,6 +3223,9 @@
     (path "/ebc292d5-2582-4099-8764-6cb28f1c8a9b/6febd654-8041-4b1c-bbf6-155fce015ba6"
       (reference "#PWR030") (unit 1) (value "GND") (footprint "")
     )
+    (path "/8972c389-56a6-466a-9271-66b0ec918c0e/cab5691d-4652-4e6c-b4d2-376003ed28ab"
+      (reference "#PWR031") (unit 1) (value "GND") (footprint "")
+    )
     (path "/8972c389-56a6-466a-9271-66b0ec918c0e/0ca8fd15-4b74-4c88-af4b-2ac6f9d1e1b8"
       (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
     )
@@ -3276,6 +3279,9 @@
     )
     (path "/ff163e09-1c9a-4e9f-9fc2-cd2f8ec1c6f1/857ae3b4-3ab8-49f2-ba21-4f6834532cc8"
       (reference "#PWR0118") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/8972c389-56a6-466a-9271-66b0ec918c0e/513d8dee-6e00-4610-92f7-bea566c6ff2b"
+      (reference "AE1") (unit 1) (value "Antenna_Shield") (footprint "sparkfun:TRACE_ANTENNA_2.4GHZ_15.2MM")
     )
     (path "/a695f418-bc3a-4046-8cf8-067ebffee1a8"
       (reference "C1") (unit 1) (value "10uF") (footprint "Capacitor_SMD:CP_Elec_4x5.4")
