@@ -1,4 +1,4 @@
-20589450062960995
+20587782725232338
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -2225,13 +2225,6 @@ SW PUSH SMALL Tactile C&K
 0
 4
 2
-Buttons
-CS1102
-
-
-0
-0
-0
 Buzzer_Beeper
 Buzzer_12x9.5RM7.6
 Generic Buzzer, D12mm height 9.5mm with RM7.6mm
@@ -53353,13 +53346,6 @@ heatsink
 0
 2
 1
-ICs
-XCVR_NEO-M9N-00B
-
-
-0
-24
-24
 Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height
@@ -86456,3 +86442,10 @@ varistor
 0
 2
 2
+lib
+LINX_CONMHF4-SMD-G-T
+
+
+0
+4
+4

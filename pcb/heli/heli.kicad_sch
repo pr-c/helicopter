@@ -3142,6 +3142,9 @@
     (path "/07e1e7f6-7633-43e8-8098-36b98f61bd6b"
       (reference "#PWR03") (unit 1) (value "GND") (footprint "")
     )
+    (path "/ff163e09-1c9a-4e9f-9fc2-cd2f8ec1c6f1/26baf8c9-f595-4abe-96bd-bced46d57b99"
+      (reference "#PWR04") (unit 1) (value "GND") (footprint "")
+    )
     (path "/0fd4500c-d9f0-4d1d-b3a8-6664550ed5ee"
       (reference "#PWR05") (unit 1) (value "GND") (footprint "")
     )
@@ -3366,6 +3369,9 @@
     )
     (path "/a572e332-5d04-4c16-ab49-7a7eb34c0212"
       (reference "J2") (unit 1) (value "Debug") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
+    )
+    (path "/ff163e09-1c9a-4e9f-9fc2-cd2f8ec1c6f1/1aadaa92-2c01-4f7a-a059-ddf6c3c32b9e"
+      (reference "J3") (unit 1) (value "CONMHF4-SMD-G-T") (footprint "LINX_CONMHF4-SMD-G-T")
     )
     (path "/6a616114-ec84-4df9-9c86-6292a01164f6"
       (reference "J4") (unit 1) (value "Servo") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
