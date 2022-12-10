@@ -2929,12 +2929,8 @@
   (symbol (lib_id "Device:R") (at 116.84 22.225 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e5d85d82-5fcc-4bcc-b9ab-9d364f5d09a5)
-    (property "Reference" "R4" (id 0) (at 116.0053 20.447 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "170" (id 1) (at 118.5422 20.447 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
+    (property "Reference" "R4" (id 0) (at 116.84 17.5092 90))
+    (property "Value" "70" (id 1) (at 116.84 20.0461 90))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 116.84 24.003 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3361,7 +3357,7 @@
       (reference "C16") (unit 1) (value "33nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/8972c389-56a6-466a-9271-66b0ec918c0e/625ae89f-1654-4b96-97df-297979133230"
-      (reference "C17") (unit 1) (value "22pF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C17") (unit 1) (value "30pF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/8972c389-56a6-466a-9271-66b0ec918c0e/2ba5a868-044a-4328-9240-37624e13b357"
       (reference "C18") (unit 1) (value "2.2nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -3370,7 +3366,7 @@
       (reference "C19") (unit 1) (value "4.7pF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/8972c389-56a6-466a-9271-66b0ec918c0e/e0a23d66-6d86-4f71-ab37-989d1840d70a"
-      (reference "C20") (unit 1) (value "22pF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C20") (unit 1) (value "30pF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/8972c389-56a6-466a-9271-66b0ec918c0e/894a0d1b-5870-476c-a02d-c51d4bc1adde"
       (reference "C21") (unit 1) (value "1.5pF") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -3454,7 +3450,7 @@
       (reference "R3") (unit 1) (value "22k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/e5d85d82-5fcc-4bcc-b9ab-9d364f5d09a5"
-      (reference "R4") (unit 1) (value "170") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R4") (unit 1) (value "70") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/37cb4e21-5fe8-4201-a520-22df31515522"
       (reference "R5") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
