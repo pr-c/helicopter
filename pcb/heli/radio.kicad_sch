@@ -917,7 +917,7 @@
   )
 
   (symbol (lib_id "Device:Antenna_Shield") (at 182.88 58.42 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 513d8dee-6e00-4610-92f7-bea566c6ff2b)
     (property "Reference" "AE1" (id 0) (at 186.055 56.9503 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1009,6 +1009,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 147.32 82.804 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "DIGIKEY" "https://www.digikey.de/en/products/detail/walsin-technology-corporation/WR06X1004FTL/13241115" (id 4) (at 147.32 82.804 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1e8a7b57-a65e-497f-88da-8321727a03b9))
