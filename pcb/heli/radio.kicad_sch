@@ -1011,7 +1011,7 @@
     (property "Datasheet" "~" (id 3) (at 147.32 82.804 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "DIGIKEY" "https://www.digikey.de/en/products/detail/walsin-technology-corporation/WR06X1004FTL/13241115" (id 4) (at 147.32 82.804 0)
+    (property "DIGIKEY" "https://www.digikey.de/en/products/detail/walsin-technology-corporation/WR06X105-JTL/13239221" (id 4) (at 147.32 82.804 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1e8a7b57-a65e-497f-88da-8321727a03b9))
