@@ -2005,7 +2005,7 @@
     (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" (id 3) (at 60.96 20.955 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "DIGIKEY" "-" (id 4) (at 60.96 20.955 0)
+    (property "DIGIKEY" "31-AZ1117CH2-3.3TRG1CT-ND" (id 4) (at 60.96 20.955 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid cf94f674-8d44-45c6-a553-e4893299d6bd))
