@@ -46,7 +46,7 @@
       (layer "B.Paste" (type "Bottom Solder Paste"))
       (layer "B.SilkS" (type "Bottom Silk Screen"))
       (copper_finish "None")
-      (dielectric_constraints yes)
+      (dielectric_constraints no)
     )
     (pad_to_mask_clearance 0)
     (pcbplotparams
@@ -723,7 +723,7 @@
     (at 34.8738 56.261)
     (descr "module CMS SOT223 4 pins")
     (tags "CMS SOT")
-    (property "DIGIKEY" "-")
+    (property "DIGIKEY" "31-AZ1117CH2-3.3TRG1CT-ND")
     (property "Sheetfile" "heli.kicad_sch")
     (property "Sheetname" "")
     (path "/0724454d-e255-4f78-9637-104c4c7571ec")
@@ -1011,10 +1011,10 @@
     )
   )
 
-  (footprint "Capacitor_SMD:CP_Elec_5x5.9" (layer "F.Cu")
+  (footprint "Capacitor_SMD:CP_Elec_5x5.4" (layer "F.Cu")
     (tedit 5BCA39CF) (tstamp 8e2847f4-f60e-4edb-8619-ee133dfc83f9)
     (at 41.021 25.019 90)
-    (descr "SMD capacitor, aluminum electrolytic, Panasonic B6, 5.0x5.9mm")
+    (descr "SMD capacitor, aluminum electrolytic, Nichicon, 5.0x5.4mm")
     (tags "capacitor electrolytic")
     (property "DIGIKEY" "-")
     (property "Sheetfile" "heli.kicad_sch")
@@ -1023,54 +1023,54 @@
     (attr smd)
     (fp_text reference "C14" (at 0 -3.7 90) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 73df77f3-08f5-4182-9cb5-0147be57aebc)
+      (tstamp b2b9d499-3d6d-495e-a798-0f818b19fdde)
     )
     (fp_text value "10uF" (at 0 3.7 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 828fc04f-6bd5-475c-9798-1e7f773cbb3f)
+      (tstamp 22ba073a-b63b-4be9-b8fa-61b2a5f3bd9d)
     )
     (fp_text user "${REFERENCE}" (at 0 0 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp b5057152-04c8-4efc-b3e2-2c1563c1660b)
+      (tstamp 568a8957-0008-428a-a1c8-7c0fc6e57f46)
     )
-    (fp_line (start -3.625 -1.685) (end -3 -1.685) (layer "F.SilkS") (width 0.12) (tstamp 21351cb6-95f8-4409-a1a3-0c6ba9562ca7))
-    (fp_line (start -2.76 -1.695563) (end -1.695563 -2.76) (layer "F.SilkS") (width 0.12) (tstamp 42ab66c2-d15f-42d2-a126-790644e98d26))
-    (fp_line (start -2.76 1.695563) (end -1.695563 2.76) (layer "F.SilkS") (width 0.12) (tstamp 4a10df2a-e8e5-4203-a45c-348eb7ba9102))
-    (fp_line (start -1.695563 2.76) (end 2.76 2.76) (layer "F.SilkS") (width 0.12) (tstamp 7864a3a7-36d6-40c5-b49b-217fee6ab348))
-    (fp_line (start 2.76 2.76) (end 2.76 1.06) (layer "F.SilkS") (width 0.12) (tstamp 79f5407e-36b7-4db1-8259-7d0197068502))
-    (fp_line (start -1.695563 -2.76) (end 2.76 -2.76) (layer "F.SilkS") (width 0.12) (tstamp 814b3ca2-341b-4a03-8515-3383934ffcaa))
-    (fp_line (start 2.76 -2.76) (end 2.76 -1.06) (layer "F.SilkS") (width 0.12) (tstamp 955faeb5-bf1e-415f-b039-e4f46ee573cd))
-    (fp_line (start -3.3125 -1.9975) (end -3.3125 -1.3725) (layer "F.SilkS") (width 0.12) (tstamp a68209dc-1b67-458b-a5c8-6690780e8fe2))
-    (fp_line (start -2.76 -1.695563) (end -2.76 -1.06) (layer "F.SilkS") (width 0.12) (tstamp a9c95a18-d2eb-4b4f-b032-14d18c3cd0c8))
-    (fp_line (start -2.76 1.695563) (end -2.76 1.06) (layer "F.SilkS") (width 0.12) (tstamp b19a4d1b-6528-4c4e-9443-bada903c8428))
-    (fp_line (start -2.9 1.75) (end -1.75 2.9) (layer "F.CrtYd") (width 0.05) (tstamp 0cc0a490-18fc-4e51-a040-0cf5f5b5e792))
-    (fp_line (start -2.9 -1.05) (end -3.95 -1.05) (layer "F.CrtYd") (width 0.05) (tstamp 10870e73-c273-49cc-b701-42b4b52e17ad))
-    (fp_line (start 2.9 -2.9) (end 2.9 -1.05) (layer "F.CrtYd") (width 0.05) (tstamp 270fba26-1961-4238-9be2-4c77d5110bba))
-    (fp_line (start 2.9 1.05) (end 2.9 2.9) (layer "F.CrtYd") (width 0.05) (tstamp 3b44d60a-8b1b-459e-aea0-2493917ff06d))
-    (fp_line (start -1.75 2.9) (end 2.9 2.9) (layer "F.CrtYd") (width 0.05) (tstamp 3ee09318-8565-4d48-b05c-ce8998a6e7c4))
-    (fp_line (start -3.95 -1.05) (end -3.95 1.05) (layer "F.CrtYd") (width 0.05) (tstamp 65368e0f-27d3-4002-aa7f-e7b2ef67c6c1))
-    (fp_line (start 3.95 -1.05) (end 3.95 1.05) (layer "F.CrtYd") (width 0.05) (tstamp 6efffcb8-b6e2-42d6-a9fa-30e18ff2d1e4))
-    (fp_line (start -2.9 -1.75) (end -2.9 -1.05) (layer "F.CrtYd") (width 0.05) (tstamp 71e2a2a1-0189-43a5-98ed-ac11bdd332cd))
-    (fp_line (start -3.95 1.05) (end -2.9 1.05) (layer "F.CrtYd") (width 0.05) (tstamp 856463e9-f4cf-414a-afcf-e89e21575649))
-    (fp_line (start -2.9 1.05) (end -2.9 1.75) (layer "F.CrtYd") (width 0.05) (tstamp a2cd0b2d-9f7f-4fe9-9b9d-564da29366d2))
-    (fp_line (start 3.95 1.05) (end 2.9 1.05) (layer "F.CrtYd") (width 0.05) (tstamp cbdc2721-960f-4927-a40c-c1bdff88c149))
-    (fp_line (start -2.9 -1.75) (end -1.75 -2.9) (layer "F.CrtYd") (width 0.05) (tstamp da6434af-d3e9-4146-a13e-90b05e4d4f41))
-    (fp_line (start -1.75 -2.9) (end 2.9 -2.9) (layer "F.CrtYd") (width 0.05) (tstamp f6b420f6-ef45-4023-83b3-a2a8035ef185))
-    (fp_line (start 2.9 -1.05) (end 3.95 -1.05) (layer "F.CrtYd") (width 0.05) (tstamp fc5ec76c-841c-448b-914f-cc584082954d))
-    (fp_line (start -1.783956 -1.45) (end -1.783956 -0.95) (layer "F.Fab") (width 0.1) (tstamp 38b42bd2-3079-4966-812d-b006d89d3461))
-    (fp_line (start -2.65 1.65) (end -1.65 2.65) (layer "F.Fab") (width 0.1) (tstamp 4bcf4bb9-89ce-4ce6-9c8d-1e64b8d8bedb))
-    (fp_line (start -1.65 2.65) (end 2.65 2.65) (layer "F.Fab") (width 0.1) (tstamp 7885f16f-38b7-4dd6-868a-95550d7b245d))
-    (fp_line (start -2.65 -1.65) (end -1.65 -2.65) (layer "F.Fab") (width 0.1) (tstamp 7c4604dc-eefe-4204-9d3b-f611b546e045))
-    (fp_line (start -1.65 -2.65) (end 2.65 -2.65) (layer "F.Fab") (width 0.1) (tstamp 99cbeb63-53fb-4c63-ac66-7a3cba5f0b7e))
-    (fp_line (start -2.65 -1.65) (end -2.65 1.65) (layer "F.Fab") (width 0.1) (tstamp 99ef15f8-7c99-4572-9410-b128e0b992dc))
-    (fp_line (start -2.033956 -1.2) (end -1.533956 -1.2) (layer "F.Fab") (width 0.1) (tstamp a059ba6b-c4f5-4b66-a60d-d544e0a3bf98))
-    (fp_line (start 2.65 -2.65) (end 2.65 2.65) (layer "F.Fab") (width 0.1) (tstamp b8245a6c-e4d8-40f8-a2e8-c9f90c1c5364))
-    (fp_circle (center 0 0) (end 2.5 0) (layer "F.Fab") (width 0.1) (fill none) (tstamp ad08a22b-ad5f-4c81-822e-718bb489e83e))
+    (fp_line (start 2.76 -2.76) (end 2.76 -1.06) (layer "F.SilkS") (width 0.12) (tstamp 1d5bfbe7-56ac-407f-a00a-44a2cc677662))
+    (fp_line (start -1.695563 2.76) (end 2.76 2.76) (layer "F.SilkS") (width 0.12) (tstamp 3c7a6d5a-5344-4783-a5d4-3aff21cf75b2))
+    (fp_line (start -2.76 1.695563) (end -1.695563 2.76) (layer "F.SilkS") (width 0.12) (tstamp 4b017259-c89d-4c1b-99ed-7e0dcea918ae))
+    (fp_line (start -2.76 1.695563) (end -2.76 1.06) (layer "F.SilkS") (width 0.12) (tstamp 6d3919ce-7363-4185-872f-0fd53b08adb8))
+    (fp_line (start -3.625 -1.685) (end -3 -1.685) (layer "F.SilkS") (width 0.12) (tstamp 7e935d66-eef1-4d88-bd70-442dd9ef6762))
+    (fp_line (start 2.76 2.76) (end 2.76 1.06) (layer "F.SilkS") (width 0.12) (tstamp 84bf2ea3-abaa-4db8-8c56-75c1f0a96ddf))
+    (fp_line (start -3.3125 -1.9975) (end -3.3125 -1.3725) (layer "F.SilkS") (width 0.12) (tstamp ad0b60d1-3940-45c2-adf0-9f5dec50ef33))
+    (fp_line (start -2.76 -1.695563) (end -1.695563 -2.76) (layer "F.SilkS") (width 0.12) (tstamp bc153ff0-ee86-4595-9a82-c95a49588dc6))
+    (fp_line (start -2.76 -1.695563) (end -2.76 -1.06) (layer "F.SilkS") (width 0.12) (tstamp ca23a6a2-8f1a-4946-8332-6f74967213be))
+    (fp_line (start -1.695563 -2.76) (end 2.76 -2.76) (layer "F.SilkS") (width 0.12) (tstamp ca64a4fb-fe3c-46f1-976f-fd8762a712d2))
+    (fp_line (start 2.9 1.05) (end 2.9 2.9) (layer "F.CrtYd") (width 0.05) (tstamp 0558725a-bf8d-49a5-b906-f6342c0053bf))
+    (fp_line (start 2.9 -1.05) (end 3.95 -1.05) (layer "F.CrtYd") (width 0.05) (tstamp 164ee115-f3a9-4eb7-acda-fb8ab585308f))
+    (fp_line (start -1.75 2.9) (end 2.9 2.9) (layer "F.CrtYd") (width 0.05) (tstamp 26368b37-28c3-4ac4-be96-56deafab0451))
+    (fp_line (start -2.9 -1.75) (end -1.75 -2.9) (layer "F.CrtYd") (width 0.05) (tstamp 2f970a72-16e9-4108-ae22-165bc7f75af7))
+    (fp_line (start -2.9 1.05) (end -2.9 1.75) (layer "F.CrtYd") (width 0.05) (tstamp 3ca78713-eec2-4db4-9c32-491be684590f))
+    (fp_line (start 3.95 1.05) (end 2.9 1.05) (layer "F.CrtYd") (width 0.05) (tstamp 4f37db39-bed0-41bf-930a-a16e70942787))
+    (fp_line (start -3.95 -1.05) (end -3.95 1.05) (layer "F.CrtYd") (width 0.05) (tstamp 5725cbbf-936d-4029-9053-b64b0223ec77))
+    (fp_line (start 2.9 -2.9) (end 2.9 -1.05) (layer "F.CrtYd") (width 0.05) (tstamp 5c0655d4-7c8c-4ffa-afe9-5dfa6c3bf0e3))
+    (fp_line (start -2.9 -1.05) (end -3.95 -1.05) (layer "F.CrtYd") (width 0.05) (tstamp 928b1e27-3057-4c28-a6e8-d347fc73f3ee))
+    (fp_line (start -1.75 -2.9) (end 2.9 -2.9) (layer "F.CrtYd") (width 0.05) (tstamp a5289138-5904-4911-b3d6-58286c8b53aa))
+    (fp_line (start -3.95 1.05) (end -2.9 1.05) (layer "F.CrtYd") (width 0.05) (tstamp adb8d3c4-7b6e-4e03-8231-e41609b87e67))
+    (fp_line (start 3.95 -1.05) (end 3.95 1.05) (layer "F.CrtYd") (width 0.05) (tstamp cf3688ec-c9c3-4ffe-983a-87360106b03e))
+    (fp_line (start -2.9 -1.75) (end -2.9 -1.05) (layer "F.CrtYd") (width 0.05) (tstamp d9455007-6f1a-45e7-8226-80cfa1fb15b4))
+    (fp_line (start -2.9 1.75) (end -1.75 2.9) (layer "F.CrtYd") (width 0.05) (tstamp fa8eb9f1-8669-47ee-bd71-32ddb6f7b085))
+    (fp_line (start -2.65 1.65) (end -1.65 2.65) (layer "F.Fab") (width 0.1) (tstamp 09516065-4508-45e0-95b4-c5a48430b0b1))
+    (fp_line (start -1.65 2.65) (end 2.65 2.65) (layer "F.Fab") (width 0.1) (tstamp 13aef09c-a561-4f9c-9460-7f6ec1f03aeb))
+    (fp_line (start -1.783956 -1.45) (end -1.783956 -0.95) (layer "F.Fab") (width 0.1) (tstamp 158ae293-d443-4267-bffe-d8a5a84d8bc5))
+    (fp_line (start -2.65 -1.65) (end -1.65 -2.65) (layer "F.Fab") (width 0.1) (tstamp 1b1cee6a-6df7-4d07-851d-7eef17e9bd3d))
+    (fp_line (start 2.65 -2.65) (end 2.65 2.65) (layer "F.Fab") (width 0.1) (tstamp 2ffd6ed8-b177-453d-a881-cbeadb7ed0a0))
+    (fp_line (start -2.033956 -1.2) (end -1.533956 -1.2) (layer "F.Fab") (width 0.1) (tstamp 80422a7c-2df4-44fb-9930-8193a362ec4c))
+    (fp_line (start -1.65 -2.65) (end 2.65 -2.65) (layer "F.Fab") (width 0.1) (tstamp 9ce70f54-837b-4b0b-8356-ebdd89c69428))
+    (fp_line (start -2.65 -1.65) (end -2.65 1.65) (layer "F.Fab") (width 0.1) (tstamp d9a617f5-522d-4ec8-a377-86ffde7610fb))
+    (fp_circle (center 0 0) (end 2.5 0) (layer "F.Fab") (width 0.1) (fill none) (tstamp a56f7143-ac7a-4cef-b731-b68a59451eae))
     (pad "1" smd roundrect (at -2.2 0 90) (size 3 1.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.15625)
-      (net 3 "3.3V") (pintype "passive") (tstamp 580624f4-8540-4966-b9a9-d572a4691c63))
+      (net 3 "3.3V") (pintype "passive") (tstamp d63d209e-a214-4464-b500-2c16969c540d))
     (pad "2" smd roundrect (at 2.2 0 90) (size 3 1.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.15625)
-      (net 2 "GND") (pintype "passive") (tstamp f1479762-a69d-430d-bde4-79c09a0cef62))
-    (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_5x5.9.wrl"
+      (net 2 "GND") (pintype "passive") (tstamp 47b7a73a-7812-4f4a-8e0c-9590dad00c78))
+    (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_5x5.4.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1091,32 +1091,32 @@
     (attr through_hole)
     (fp_text reference "J3" (at 0.288 -2.472 -90) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp f1925e3b-bbb0-40d2-9d8f-ba780ffa9658)
+      (tstamp e94e62d6-edbd-467a-b9e6-e0e5bbce33ae)
     )
     (fp_text value "CONMHF4-SMD-G-T" (at 9.559 3.092 -90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 28c9dff8-5066-481f-bed4-2f8597ec1408)
+      (tstamp 82c5bc0f-03b8-41a8-a139-353453eb5227)
     )
-    (fp_circle (center 0 1.873) (end 0.1 1.873) (layer "F.SilkS") (width 0.2) (fill none) (tstamp 56312b89-5490-4685-a71e-62785b0e28ae))
-    (fp_line (start -1.5 1.55) (end 1.5 1.55) (layer "F.CrtYd") (width 0.05) (tstamp 26450bd8-b51d-45fb-80e6-e028428e5cfa))
-    (fp_line (start -1.5 -1.5) (end -1.5 1.55) (layer "F.CrtYd") (width 0.05) (tstamp 3103a29e-446d-4b59-ba99-8c214d832fe3))
-    (fp_line (start 1.5 -1.5) (end -1.5 -1.5) (layer "F.CrtYd") (width 0.05) (tstamp 925bd4bf-fc62-4530-be79-de98af99f4bd))
-    (fp_line (start 1.5 1.55) (end 1.5 -1.5) (layer "F.CrtYd") (width 0.05) (tstamp 9a4a4efd-7427-468a-924e-f3e0162b9b2c))
-    (fp_line (start -0.88 -0.84) (end 0.58 -0.84) (layer "F.Fab") (width 0.127) (tstamp 113948f7-efd9-404c-8300-23ed872a5f06))
-    (fp_line (start 0.88 0.84) (end 0.88 -0.54) (layer "F.Fab") (width 0.127) (tstamp 34004b9f-ac41-4b49-a246-7f0a8e39fcf9))
-    (fp_line (start 0.58 -0.84) (end 0.88 -0.54) (layer "F.Fab") (width 0.127) (tstamp 35858077-ec46-4426-8a7d-43296f9ae4b2))
-    (fp_line (start -0.88 0.84) (end 0.88 0.84) (layer "F.Fab") (width 0.127) (tstamp 5d9ae41f-a9aa-4459-a0ad-7e9bd049a8a7))
-    (fp_line (start -0.88 -0.84) (end -0.88 0.84) (layer "F.Fab") (width 0.127) (tstamp b738dee8-5edc-492d-9159-654452cef986))
-    (fp_circle (center 0 1.873) (end 0.1 1.873) (layer "F.Fab") (width 0.2) (fill none) (tstamp 727f4a68-9dfc-4c6b-825a-3ecbee82c60f))
+    (fp_circle (center 0 1.873) (end 0.1 1.873) (layer "F.SilkS") (width 0.2) (fill none) (tstamp 3c4a8a7c-ebb8-4354-8f66-e1c1e6e5baef))
+    (fp_line (start 1.5 -1.5) (end -1.5 -1.5) (layer "F.CrtYd") (width 0.05) (tstamp 5b29577e-cddd-44d3-8c06-bd2679a3230c))
+    (fp_line (start -1.5 1.55) (end 1.5 1.55) (layer "F.CrtYd") (width 0.05) (tstamp 6847a1c8-605b-4a69-8fd5-d4de84f3e3c2))
+    (fp_line (start -1.5 -1.5) (end -1.5 1.55) (layer "F.CrtYd") (width 0.05) (tstamp b02e2df3-8cb9-405e-83a3-93be90300a4c))
+    (fp_line (start 1.5 1.55) (end 1.5 -1.5) (layer "F.CrtYd") (width 0.05) (tstamp fdd76f44-6866-4716-b5d4-880dc3e692c3))
+    (fp_line (start 0.88 0.84) (end 0.88 -0.54) (layer "F.Fab") (width 0.127) (tstamp 56dae756-153a-4bae-b61f-cf531e540786))
+    (fp_line (start -0.88 -0.84) (end 0.58 -0.84) (layer "F.Fab") (width 0.127) (tstamp 698e33dc-5d09-4a6d-9f61-1aeae40103e9))
+    (fp_line (start 0.58 -0.84) (end 0.88 -0.54) (layer "F.Fab") (width 0.127) (tstamp 750e4edf-90c6-4ea5-bdd1-8e0c53a92ed7))
+    (fp_line (start -0.88 0.84) (end 0.88 0.84) (layer "F.Fab") (width 0.127) (tstamp d389aa3a-7808-4dca-a871-0e83171285f9))
+    (fp_line (start -0.88 -0.84) (end -0.88 0.84) (layer "F.Fab") (width 0.127) (tstamp fdea084e-bdd4-475e-9c2d-788ddc29da22))
+    (fp_circle (center 0 1.873) (end 0.1 1.873) (layer "F.Fab") (width 0.2) (fill none) (tstamp ddea2567-421b-4044-b778-d4604e4f9f8b))
     (pad "1" smd rect (at 0 1 270) (size 0.6 0.6) (layers "F.Cu" "F.Paste" "F.Mask")
-      (net 71 "Net-(J3-Pad1)") (pintype "passive") (tstamp c84f1bc7-d66b-45ac-9191-19155299be1a))
+      (net 71 "Net-(J3-Pad1)") (pintype "passive") (tstamp a24b52e1-9b5a-4ae0-8f39-da1641a0909e))
     (pad "S1" smd rect (at -0.96 0 270) (size 0.58 1.58) (layers "F.Cu" "F.Paste" "F.Mask")
-      (net 2 "GND") (pintype "passive") (tstamp b7106a7a-c2d6-4975-b7fa-275a6f633b11))
+      (net 2 "GND") (pintype "passive") (tstamp e395f55e-92f5-4be7-b03e-75714015a165))
     (pad "S2" smd rect (at 0 -1 270) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
-      (net 2 "GND") (pintype "passive") (tstamp 170e9e6f-bc37-462c-a090-147fabc2016e))
+      (net 2 "GND") (pintype "passive") (tstamp b59f1877-8de2-4a10-8821-44bab9336f53))
     (pad "S3" smd rect (at 0.96 0 270) (size 0.58 1.58) (layers "F.Cu" "F.Paste" "F.Mask")
-      (net 2 "GND") (pintype "passive") (tstamp bd87aeda-4da4-4992-97c7-09407ff5b448))
-    (zone (net 0) (net_name "") (layers *.Cu) (tstamp 2db0daa8-d231-469e-a4ad-a3548a9cdf1a) (hatch full 0.508)
+      (net 2 "GND") (pintype "passive") (tstamp 346386f0-0ef7-4cef-985e-46fed7d6d74d))
+    (zone (net 0) (net_name "") (layers *.Cu) (tstamp b089dde0-b434-4aca-abf2-bd50678abd2c) (hatch full 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.01)
       (keepout (tracks allowed) (vias not_allowed) (pads allowed) (copperpour allowed) (footprints allowed))
@@ -1130,7 +1130,7 @@
         )
       )
     )
-    (zone (net 0) (net_name "") (layer "F.Cu") (tstamp 95696d40-59be-446e-998b-d828861d1b6a) (hatch full 0.508)
+    (zone (net 0) (net_name "") (layer "F.Cu") (tstamp be756cee-6e4c-4536-96e5-25f19363c8a4) (hatch full 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.01)
       (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed))
@@ -1144,7 +1144,7 @@
         )
       )
     )
-    (zone (net 0) (net_name "") (layer "B.Cu") (tstamp b96dcedf-b824-463b-9dad-2d245e056fb0) (hatch full 0.508)
+    (zone (net 0) (net_name "") (layer "B.Cu") (tstamp 63242dc1-e33e-48fe-87ba-252b75f94d98) (hatch full 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.01)
       (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed))
@@ -4070,12 +4070,329 @@
     )
   )
 
+  (gr_line (start 18.8468 119.1332) (end 141.503943 119.1332) (layer "Dwgs.User") (width 0.1) (tstamp 040df928-e3ce-439a-817d-f2f933c589a2))
+  (gr_line (start 18.8468 74.4182) (end 141.503943 74.4182) (layer "Dwgs.User") (width 0.1) (tstamp 05f7ca01-cdf6-48d2-a415-e035e5823473))
+  (gr_line (start 18.8468 78.4832) (end 141.503943 78.4832) (layer "Dwgs.User") (width 0.1) (tstamp 1e140aa4-b2a8-4009-be35-b4300e02ff6e))
+  (gr_line (start 18.8468 115.0682) (end 141.503943 115.0682) (layer "Dwgs.User") (width 0.1) (tstamp 3eb68777-881d-41a0-995d-a92da50d8ac4))
+  (gr_line (start 59.332515 70.0532) (end 59.332515 127.2632) (layer "Dwgs.User") (width 0.1) (tstamp 44d32a2c-90cd-4d5e-99af-a7a0f75a2097))
+  (gr_line (start 18.8468 111.0032) (end 141.503943 111.0032) (layer "Dwgs.User") (width 0.1) (tstamp 48121b9b-3ff4-4bfa-8fc5-98382c6333e6))
+  (gr_line (start 18.8468 106.9382) (end 141.503943 106.9382) (layer "Dwgs.User") (width 0.1) (tstamp 64ecfbf0-d075-4834-a435-8e85225e33d2))
+  (gr_line (start 34.161086 70.0532) (end 34.161086 127.2632) (layer "Dwgs.User") (width 0.1) (tstamp 6cf2a326-dcfe-4d18-b585-3def13c5dcc2))
+  (gr_line (start 95.661086 70.0532) (end 95.661086 127.2632) (layer "Dwgs.User") (width 0.1) (tstamp 6da43f39-69df-4f48-a6e3-4580be9b1bb5))
+  (gr_line (start 18.8468 70.0532) (end 141.503943 70.0532) (layer "Dwgs.User") (width 0.1) (tstamp 78131ea4-cdde-4d07-9802-212d337ab515))
+  (gr_line (start 141.503943 70.0532) (end 141.503943 127.2632) (layer "Dwgs.User") (width 0.1) (tstamp 94992253-65ac-49dc-86e6-30a6be58cd3e))
+  (gr_line (start 112.261086 70.0532) (end 112.261086 127.2632) (layer "Dwgs.User") (width 0.1) (tstamp 94e2b4a3-a6cc-41da-91ec-34bd1cd2b44a))
+  (gr_line (start 18.8468 98.8082) (end 141.503943 98.8082) (layer "Dwgs.User") (width 0.1) (tstamp 98915f13-8adc-4fc9-a70d-e85aa6a035ff))
+  (gr_line (start 18.8468 70.0532) (end 18.8468 127.2632) (layer "Dwgs.User") (width 0.1) (tstamp b25b54cf-aef9-4db0-b6f2-95afc98b9e95))
+  (gr_line (start 18.8468 94.7432) (end 141.503943 94.7432) (layer "Dwgs.User") (width 0.1) (tstamp c319ef0e-2153-4de3-b98d-bcd969990dcf))
+  (gr_line (start 18.8468 102.8732) (end 141.503943 102.8732) (layer "Dwgs.User") (width 0.1) (tstamp ca8a9320-402c-49c2-9396-bf4c89246470))
+  (gr_line (start 18.8468 127.2632) (end 141.503943 127.2632) (layer "Dwgs.User") (width 0.1) (tstamp d27db37f-53ba-4118-8ceb-d8aa509063b9))
+  (gr_line (start 18.8468 86.6132) (end 141.503943 86.6132) (layer "Dwgs.User") (width 0.1) (tstamp d5123c29-7a24-4063-8e58-f7be38532416))
+  (gr_line (start 75.932515 70.0532) (end 75.932515 127.2632) (layer "Dwgs.User") (width 0.1) (tstamp e705d8ca-0e61-4404-8b49-c126acbf65d3))
+  (gr_line (start 124.8468 70.0532) (end 124.8468 127.2632) (layer "Dwgs.User") (width 0.1) (tstamp f11c64e8-6c5e-44f1-85f4-20902b6897dc))
+  (gr_line (start 18.8468 90.6782) (end 141.503943 90.6782) (layer "Dwgs.User") (width 0.1) (tstamp f1364471-ca5c-4e1c-b1f5-ade2b33041b5))
+  (gr_line (start 18.8468 123.1982) (end 141.503943 123.1982) (layer "Dwgs.User") (width 0.1) (tstamp f79aebae-c458-41d3-a960-a614ee89f477))
+  (gr_line (start 18.8468 82.5482) (end 141.503943 82.5482) (layer "Dwgs.User") (width 0.1) (tstamp fe522e92-a6a9-4a1f-98e3-635a86b9d1e0))
   (gr_line (start 68.58 49.878) (end 50 65) (layer "Edge.Cuts") (width 0.1) (tstamp 1d09e35e-532b-45c9-b31e-6c52e52b3c9f))
   (gr_line locked (start 18 15) (end 50 15) (layer "Edge.Cuts") (width 0.1) (tstamp 2ce4d510-1a64-431e-90b2-1e8d5238c17e))
   (gr_line locked (start 18 15) (end 18 65) (layer "Edge.Cuts") (width 0.1) (tstamp 82c83cc8-85c0-4463-8acd-b32eb0e93796))
   (gr_line locked (start 18 65) (end 50 65) (layer "Edge.Cuts") (width 0.1) (tstamp b66201b9-bca4-4b20-b93a-3b61b41444b9))
   (gr_line (start 68.58 29.878) (end 50 15) (layer "Edge.Cuts") (width 0.1) (tstamp c4c021f8-5ef3-4923-b1ec-bb330abb809d))
   (gr_line (start 68.58 29.878) (end 68.58 49.878) (layer "Edge.Cuts") (width 0.1) (tstamp d24b4667-d83e-4358-aa8a-006859cbda6a))
+  (gr_text "" (at 96.411086 111.7532) (layer "Dwgs.User") (tstamp 02b662d3-6ed4-4f11-824a-21135bad1ab4)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "" (at 96.411086 91.4282) (layer "Dwgs.User") (tstamp 03c241e7-e3c3-406b-964a-204a1020d9fb)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "3.3" (at 113.011086 83.2982) (layer "Dwgs.User") (tstamp 05a9b3d8-d53f-45e9-a275-aea4000402f4)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "copper" (at 34.911086 111.7532) (layer "Dwgs.User") (tstamp 06c3c252-bb3e-430b-b0d7-26a209d4d129)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0.11 mm" (at 76.682515 107.6882) (layer "Dwgs.User") (tstamp 07f7721b-fc51-4a2c-8e33-54fae1eee352)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "" (at 60.082515 111.7532) (layer "Dwgs.User") (tstamp 089e9164-02e0-4025-8d0c-c3dfe196091e)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "1" (at 113.011086 119.8832) (layer "Dwgs.User") (tstamp 0b41ec0d-065c-4843-8d05-5657a4a78578)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0" (at 125.5968 123.9482) (layer "Dwgs.User") (tstamp 0dad31a1-26b1-4686-823f-0d1b79709b98)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0 mm" (at 76.682515 79.2332) (layer "Dwgs.User") (tstamp 1464445f-0016-4068-a8da-89bd5f66dd00)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "1" (at 113.011086 111.7532) (layer "Dwgs.User") (tstamp 1761fcf8-5a98-454a-998f-dd0697b0e603)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "" (at 60.082515 87.3632) (layer "Dwgs.User") (tstamp 1a3b06f7-e69e-455e-aaf3-e5e79be71b7e)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Loss Tangent" (at 125.5968 70.8032) (layer "Dwgs.User") (tstamp 1fa5a432-d129-47a2-9a2c-d211587259e0)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left top))
+  )
+  (gr_text "Not specified" (at 60.082515 83.2982) (layer "Dwgs.User") (tstamp 27b31844-a6ca-4364-82a8-9f9f223f09f0)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "1" (at 113.011086 95.4932) (layer "Dwgs.User") (tstamp 27b322fd-98b2-4fd7-bc69-eed042c54e2f)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "FR4" (at 60.082515 107.6882) (layer "Dwgs.User") (tstamp 28841d21-1c7e-4c13-b589-ccc1e3407be4)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Not specified" (at 60.082515 115.8182) (layer "Dwgs.User") (tstamp 2fedbca8-9e7c-4707-8ad6-14a3a1408d89)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0 mm" (at 76.682515 123.9482) (layer "Dwgs.User") (tstamp 32568122-6856-4dde-8146-75f5fe7c4c6e)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "FR4" (at 60.082515 99.5582) (layer "Dwgs.User") (tstamp 3405c78c-faa9-4b9a-8ed4-82b26390764c)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "F.Paste" (at 19.5968 79.2332) (layer "Dwgs.User") (tstamp 390283f3-4d55-480d-95a8-3b069238f999)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0" (at 125.5968 115.8182) (layer "Dwgs.User") (tstamp 3d59d810-2f17-41e5-ae70-27ab3eae6847)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Not specified" (at 60.082515 123.9482) (layer "Dwgs.User") (tstamp 41029001-47a4-435a-8ccf-04de376e89a6)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "1" (at 113.011086 79.2332) (layer "Dwgs.User") (tstamp 48082750-7e4c-42ce-8321-796b528fe507)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "" (at 60.082515 79.2332) (layer "Dwgs.User") (tstamp 482b86d7-ec77-45d9-915d-459e2e7f3259)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "copper" (at 34.911086 95.4932) (layer "Dwgs.User") (tstamp 4a0dc8c8-c899-493e-a74a-e48136821d73)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "prepreg" (at 34.911086 99.5582) (layer "Dwgs.User") (tstamp 4b543511-2c40-4903-9347-cae4f590d6e3)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Not specified" (at 60.082515 75.1682) (layer "Dwgs.User") (tstamp 4b563035-fca0-475b-9ef7-1295d076afb3)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "1" (at 113.011086 75.1682) (layer "Dwgs.User") (tstamp 4ffba5ad-d70e-455d-8feb-f5510e3e2cf5)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0" (at 125.5968 87.3632) (layer "Dwgs.User") (tstamp 51e09498-c852-44b9-9e7b-a45b82b1f1b9)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "" (at 96.411086 119.8832) (layer "Dwgs.User") (tstamp 538907e3-4f79-4e0c-8445-402847f90230)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "copper" (at 34.911086 87.3632) (layer "Dwgs.User") (tstamp 54f79705-66cc-4597-bc70-03413a6c1bbc)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "B.Paste" (at 19.5968 119.8832) (layer "Dwgs.User") (tstamp 55fedc58-1125-4583-bb9c-81c7e8f271a2)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "B.Cu" (at 19.5968 111.7532) (layer "Dwgs.User") (tstamp 5865199e-3cfe-4e3f-8bfe-1c31282893a7)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Material" (at 60.082515 70.8032) (layer "Dwgs.User") (tstamp 59a0c303-dd8f-4428-8b1d-5d35418a7208)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left top))
+  )
+  (gr_text "Thickness (mm)" (at 76.682515 70.8032) (layer "Dwgs.User") (tstamp 59b57529-a8eb-4c79-8819-cbff8e1f4432)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left top))
+  )
+  (gr_text "Top Solder Mask" (at 34.911086 83.2982) (layer "Dwgs.User") (tstamp 5c500642-5d9b-43d8-be23-59ba64c61ccf)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Not specified" (at 96.411086 123.9482) (layer "Dwgs.User") (tstamp 5d22b0c3-24e1-47e5-9d4c-33600146e10a)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "F.Mask" (at 19.5968 83.2982) (layer "Dwgs.User") (tstamp 5d87d8aa-2b56-45d4-b8ee-fd9781e2a4ff)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "F.Silkscreen" (at 19.5968 75.1682) (layer "Dwgs.User") (tstamp 6131cf2d-401c-4385-8109-52d24bd4db72)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0" (at 125.5968 95.4932) (layer "Dwgs.User") (tstamp 673b0aa4-81f8-423e-b279-7c23f50e0a7e)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "In1.Cu" (at 19.5968 95.4932) (layer "Dwgs.User") (tstamp 6981a231-6756-4f9e-a1cc-230648f994eb)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0" (at 125.5968 111.7532) (layer "Dwgs.User") (tstamp 6af2c81f-e7aa-4c32-afe8-b9fdcc76f9f2)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "1" (at 113.011086 123.9482) (layer "Dwgs.User") (tstamp 6b3c8c7a-bd2a-4ef7-a3a7-3fcd62f66209)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "3.3" (at 113.011086 115.8182) (layer "Dwgs.User") (tstamp 6c7d5837-d687-41d9-912f-c38fb5b22c74)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "core" (at 34.911086 107.6882) (layer "Dwgs.User") (tstamp 76ade982-606a-4048-bed2-da969a494ebf)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "" (at 96.411086 99.5582) (layer "Dwgs.User") (tstamp 770c310a-c2d9-44cd-8af6-4abde613becb)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Dielectric" (at 19.5968 99.5582) (layer "Dwgs.User") (tstamp 78accc06-e638-4f4e-9960-33edc7e4d70a)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0.02" (at 125.5968 107.6882) (layer "Dwgs.User") (tstamp 7a46593a-9e52-4371-a5d0-19bbe61fd752)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Bottom Silk Screen" (at 34.911086 123.9482) (layer "Dwgs.User") (tstamp 7f8f4aab-f8f2-4663-9f68-2ba64ec7c3af)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Not specified" (at 96.411086 83.2982) (layer "Dwgs.User") (tstamp 825f42a0-0b93-4b55-a86b-dc047da9ea58)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "copper" (at 34.911086 103.6232) (layer "Dwgs.User") (tstamp 836ddd6e-820b-4238-93a2-6021532bc881)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "B.Mask" (at 19.5968 115.8182) (layer "Dwgs.User") (tstamp 85ccd2f5-94f4-451e-9a47-6d737d71fb39)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Epsilon R" (at 113.011086 70.8032) (layer "Dwgs.User") (tstamp 882537c7-45da-4617-a71c-d897f92a301c)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left top))
+  )
+  (gr_text "0.034798 mm" (at 76.682515 87.3632) (layer "Dwgs.User") (tstamp 92f0ebc1-58dd-44db-a217-03ac87e746a1)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "" (at 60.082515 95.4932) (layer "Dwgs.User") (tstamp 93a0468a-ad93-4005-8599-5acd38f2f374)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Color" (at 96.411086 70.8032) (layer "Dwgs.User") (tstamp 9471a06b-53d8-4aec-9cfb-ed47853fa828)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left top))
+  )
+  (gr_text "Not specified" (at 96.411086 75.1682) (layer "Dwgs.User") (tstamp 99123226-80cc-4d6a-89f0-da0556504404)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0.034798 mm" (at 76.682515 111.7532) (layer "Dwgs.User") (tstamp 99b04288-3bfc-417e-823a-9531643eb6d5)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "" (at 96.411086 95.4932) (layer "Dwgs.User") (tstamp 9cb14403-b4aa-419a-9c04-1cf92421d55b)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "4.5" (at 113.011086 99.5582) (layer "Dwgs.User") (tstamp 9e8ee1f5-216e-4624-a0c5-72b857dd9675)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Layer Name" (at 19.5968 70.8032) (layer "Dwgs.User") (tstamp a1a5d14a-fb9c-4853-bd14-d1c062ca12b1)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left top))
+  )
+  (gr_text "core" (at 34.911086 91.4282) (layer "Dwgs.User") (tstamp a1a78e3d-1b86-4fbf-ba20-0349dbe53ec2)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0.11 mm" (at 76.682515 91.4282) (layer "Dwgs.User") (tstamp a5de5ac4-bd94-4722-8e7a-a0c49e6eae16)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0.02" (at 125.5968 91.4282) (layer "Dwgs.User") (tstamp a64706d9-f710-48d8-8159-aca5ac09412a)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0.034798 mm" (at 76.682515 95.4932) (layer "Dwgs.User") (tstamp a836967d-3bd7-4e5d-b588-6deff5bfbbfb)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Not specified" (at 96.411086 115.8182) (layer "Dwgs.User") (tstamp a88da3a5-98e4-474d-8b60-b5e55bfdfe25)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0" (at 125.5968 119.8832) (layer "Dwgs.User") (tstamp a89fecfa-d355-416d-9f8e-13165d120f14)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0.02" (at 125.5968 99.5582) (layer "Dwgs.User") (tstamp ac18cb4b-f52d-4757-a395-c99034a420d4)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0" (at 125.5968 83.2982) (layer "Dwgs.User") (tstamp ad29b0e7-e566-4802-8d76-06b39fa4aca8)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0.034798 mm" (at 76.682515 103.6232) (layer "Dwgs.User") (tstamp b0c37712-e2e5-4889-9d08-b54365ee0596)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "FR4" (at 60.082515 91.4282) (layer "Dwgs.User") (tstamp b5b1f2e1-d509-4180-90d7-4302e96e32d1)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0 mm" (at 76.682515 119.8832) (layer "Dwgs.User") (tstamp b741713d-32ef-4414-8d15-8f9d8b0f0518)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0.02032 mm" (at 76.682515 115.8182) (layer "Dwgs.User") (tstamp b7c378c9-28c7-44af-8fff-3da568adc53f)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "" (at 60.082515 119.8832) (layer "Dwgs.User") (tstamp bd966012-cc51-4087-a3b2-d2cf49467595)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "" (at 60.082515 103.6232) (layer "Dwgs.User") (tstamp beb98b03-8217-4de6-ab06-90d03b7b303b)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "1.2 mm" (at 76.682515 99.5582) (layer "Dwgs.User") (tstamp bfa1d108-2da9-4a7a-862b-11a42960a1b2)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Dielectric" (at 19.5968 91.4282) (layer "Dwgs.User") (tstamp bfb42019-8fbc-40e9-8145-7bdcec65e749)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Bottom Solder Paste" (at 34.911086 119.8832) (layer "Dwgs.User") (tstamp bfb9fe4d-89fc-41f7-86cc-0181589cb59d)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "4.5" (at 113.011086 91.4282) (layer "Dwgs.User") (tstamp c40e9f4f-2d28-4e62-be56-bfa9c7f96a9f)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Type" (at 34.911086 70.8032) (layer "Dwgs.User") (tstamp c9871305-02f1-4814-8dae-ec7a9c9b2754)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left top))
+  )
+  (gr_text "0" (at 125.5968 103.6232) (layer "Dwgs.User") (tstamp c9f936f4-b953-40b6-89f8-28aba4d05615)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "" (at 96.411086 107.6882) (layer "Dwgs.User") (tstamp cc6adfac-0ee0-4a9e-8cb8-9cfd4535fce8)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0" (at 125.5968 75.1682) (layer "Dwgs.User") (tstamp cf45dd2b-713e-426c-bf2e-4ea6c2c45220)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "" (at 96.411086 79.2332) (layer "Dwgs.User") (tstamp d36411c3-2e94-4bae-a72e-7699a8ef6351)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "F.Cu" (at 19.5968 87.3632) (layer "Dwgs.User") (tstamp d4d02694-6803-4027-8824-60f180c9d203)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "In2.Cu" (at 19.5968 103.6232) (layer "Dwgs.User") (tstamp dbcd6b70-4c39-4d53-bbee-ae9ad6b9e5e9)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "" (at 96.411086 87.3632) (layer "Dwgs.User") (tstamp ddf7f856-ff6b-455f-ac8b-d0b981cc1e15)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "1" (at 113.011086 103.6232) (layer "Dwgs.User") (tstamp e82c9813-35cf-46ae-8305-2db62eab5fd7)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "1" (at 113.011086 87.3632) (layer "Dwgs.User") (tstamp e8d95189-01ec-4cb9-8a12-3924987fb648)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Bottom Solder Mask" (at 34.911086 115.8182) (layer "Dwgs.User") (tstamp e8e9480b-921c-486f-8465-16b11d6265f7)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0.02032 mm" (at 76.682515 83.2982) (layer "Dwgs.User") (tstamp ebf6ea0a-fa22-41bd-bc47-d1f1e904bb83)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0 mm" (at 76.682515 75.1682) (layer "Dwgs.User") (tstamp ec7d3fb7-ae1d-4cb5-8ab3-c6924edb1632)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Top Silk Screen" (at 34.911086 75.1682) (layer "Dwgs.User") (tstamp ee0310f1-b7b3-4ac2-bf10-22ca6d7ebe22)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "B.Silkscreen" (at 19.5968 123.9482) (layer "Dwgs.User") (tstamp f3a6a668-b1ad-46fc-9cfb-157b8067aa2d)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Dielectric" (at 19.5968 107.6882) (layer "Dwgs.User") (tstamp f5a9fea4-47d5-4e7a-b530-ce8f46fd13cb)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "0" (at 125.5968 79.2332) (layer "Dwgs.User") (tstamp f850ba87-02a8-41c8-b5cf-ccef229fd590)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "Top Solder Paste" (at 34.911086 79.2332) (layer "Dwgs.User") (tstamp fc0054a4-7107-4e4b-a91f-89f58d23ff70)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "4.5" (at 113.011086 107.6882) (layer "Dwgs.User") (tstamp fcfad7ef-09c8-4b3c-bb57-3624751f1eca)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
+  (gr_text "" (at 96.411086 103.6232) (layer "Dwgs.User") (tstamp ff56a3c0-2dac-42f1-a902-929aaf3a905c)
+    (effects (font (size 1.5 1.5) (thickness 0.1)) (justify left top))
+  )
 
   (segment (start 23.475 22.025) (end 25.8 19.7) (width 0.25) (layer "In1.Cu") (net 1) (tstamp 639e576b-6051-4b4e-ad53-f5b6e33c1319))
   (segment (start 25.8 19.7) (end 35.875 19.7) (width 0.25) (layer "In1.Cu") (net 1) (tstamp 660d3902-3386-4d73-b67f-881505073134))
@@ -47074,6 +47391,131 @@
         (xy 34.836816 55.089331)
         (xy 37.248054 55)
       )
+    )
+  )
+  (group "group-boardStackUp" (id b9c5e17c-e21c-42aa-98a4-664ad236753b)
+    (members
+      02b662d3-6ed4-4f11-824a-21135bad1ab4
+      03c241e7-e3c3-406b-964a-204a1020d9fb
+      040df928-e3ce-439a-817d-f2f933c589a2
+      05a9b3d8-d53f-45e9-a275-aea4000402f4
+      05f7ca01-cdf6-48d2-a415-e035e5823473
+      06c3c252-bb3e-430b-b0d7-26a209d4d129
+      07f7721b-fc51-4a2c-8e33-54fae1eee352
+      089e9164-02e0-4025-8d0c-c3dfe196091e
+      0b41ec0d-065c-4843-8d05-5657a4a78578
+      0dad31a1-26b1-4686-823f-0d1b79709b98
+      1464445f-0016-4068-a8da-89bd5f66dd00
+      1761fcf8-5a98-454a-998f-dd0697b0e603
+      1a3b06f7-e69e-455e-aaf3-e5e79be71b7e
+      1e140aa4-b2a8-4009-be35-b4300e02ff6e
+      1fa5a432-d129-47a2-9a2c-d211587259e0
+      27b31844-a6ca-4364-82a8-9f9f223f09f0
+      27b322fd-98b2-4fd7-bc69-eed042c54e2f
+      28841d21-1c7e-4c13-b589-ccc1e3407be4
+      2fedbca8-9e7c-4707-8ad6-14a3a1408d89
+      32568122-6856-4dde-8146-75f5fe7c4c6e
+      3405c78c-faa9-4b9a-8ed4-82b26390764c
+      390283f3-4d55-480d-95a8-3b069238f999
+      3d59d810-2f17-41e5-ae70-27ab3eae6847
+      3eb68777-881d-41a0-995d-a92da50d8ac4
+      41029001-47a4-435a-8ccf-04de376e89a6
+      44d32a2c-90cd-4d5e-99af-a7a0f75a2097
+      48082750-7e4c-42ce-8321-796b528fe507
+      48121b9b-3ff4-4bfa-8fc5-98382c6333e6
+      482b86d7-ec77-45d9-915d-459e2e7f3259
+      4a0dc8c8-c899-493e-a74a-e48136821d73
+      4b543511-2c40-4903-9347-cae4f590d6e3
+      4b563035-fca0-475b-9ef7-1295d076afb3
+      4ffba5ad-d70e-455d-8feb-f5510e3e2cf5
+      51e09498-c852-44b9-9e7b-a45b82b1f1b9
+      538907e3-4f79-4e0c-8445-402847f90230
+      54f79705-66cc-4597-bc70-03413a6c1bbc
+      55fedc58-1125-4583-bb9c-81c7e8f271a2
+      5865199e-3cfe-4e3f-8bfe-1c31282893a7
+      59a0c303-dd8f-4428-8b1d-5d35418a7208
+      59b57529-a8eb-4c79-8819-cbff8e1f4432
+      5c500642-5d9b-43d8-be23-59ba64c61ccf
+      5d22b0c3-24e1-47e5-9d4c-33600146e10a
+      5d87d8aa-2b56-45d4-b8ee-fd9781e2a4ff
+      6131cf2d-401c-4385-8109-52d24bd4db72
+      64ecfbf0-d075-4834-a435-8e85225e33d2
+      673b0aa4-81f8-423e-b279-7c23f50e0a7e
+      6981a231-6756-4f9e-a1cc-230648f994eb
+      6af2c81f-e7aa-4c32-afe8-b9fdcc76f9f2
+      6b3c8c7a-bd2a-4ef7-a3a7-3fcd62f66209
+      6c7d5837-d687-41d9-912f-c38fb5b22c74
+      6cf2a326-dcfe-4d18-b585-3def13c5dcc2
+      6da43f39-69df-4f48-a6e3-4580be9b1bb5
+      76ade982-606a-4048-bed2-da969a494ebf
+      770c310a-c2d9-44cd-8af6-4abde613becb
+      78131ea4-cdde-4d07-9802-212d337ab515
+      78accc06-e638-4f4e-9960-33edc7e4d70a
+      7a46593a-9e52-4371-a5d0-19bbe61fd752
+      7f8f4aab-f8f2-4663-9f68-2ba64ec7c3af
+      825f42a0-0b93-4b55-a86b-dc047da9ea58
+      836ddd6e-820b-4238-93a2-6021532bc881
+      85ccd2f5-94f4-451e-9a47-6d737d71fb39
+      882537c7-45da-4617-a71c-d897f92a301c
+      92f0ebc1-58dd-44db-a217-03ac87e746a1
+      93a0468a-ad93-4005-8599-5acd38f2f374
+      9471a06b-53d8-4aec-9cfb-ed47853fa828
+      94992253-65ac-49dc-86e6-30a6be58cd3e
+      94e2b4a3-a6cc-41da-91ec-34bd1cd2b44a
+      98915f13-8adc-4fc9-a70d-e85aa6a035ff
+      99123226-80cc-4d6a-89f0-da0556504404
+      99b04288-3bfc-417e-823a-9531643eb6d5
+      9cb14403-b4aa-419a-9c04-1cf92421d55b
+      9e8ee1f5-216e-4624-a0c5-72b857dd9675
+      a1a5d14a-fb9c-4853-bd14-d1c062ca12b1
+      a1a78e3d-1b86-4fbf-ba20-0349dbe53ec2
+      a5de5ac4-bd94-4722-8e7a-a0c49e6eae16
+      a64706d9-f710-48d8-8159-aca5ac09412a
+      a836967d-3bd7-4e5d-b588-6deff5bfbbfb
+      a88da3a5-98e4-474d-8b60-b5e55bfdfe25
+      a89fecfa-d355-416d-9f8e-13165d120f14
+      ac18cb4b-f52d-4757-a395-c99034a420d4
+      ad29b0e7-e566-4802-8d76-06b39fa4aca8
+      b0c37712-e2e5-4889-9d08-b54365ee0596
+      b25b54cf-aef9-4db0-b6f2-95afc98b9e95
+      b5b1f2e1-d509-4180-90d7-4302e96e32d1
+      b741713d-32ef-4414-8d15-8f9d8b0f0518
+      b7c378c9-28c7-44af-8fff-3da568adc53f
+      bd966012-cc51-4087-a3b2-d2cf49467595
+      beb98b03-8217-4de6-ab06-90d03b7b303b
+      bfa1d108-2da9-4a7a-862b-11a42960a1b2
+      bfb42019-8fbc-40e9-8145-7bdcec65e749
+      bfb9fe4d-89fc-41f7-86cc-0181589cb59d
+      c319ef0e-2153-4de3-b98d-bcd969990dcf
+      c40e9f4f-2d28-4e62-be56-bfa9c7f96a9f
+      c9871305-02f1-4814-8dae-ec7a9c9b2754
+      c9f936f4-b953-40b6-89f8-28aba4d05615
+      ca8a9320-402c-49c2-9396-bf4c89246470
+      cc6adfac-0ee0-4a9e-8cb8-9cfd4535fce8
+      cf45dd2b-713e-426c-bf2e-4ea6c2c45220
+      d27db37f-53ba-4118-8ceb-d8aa509063b9
+      d36411c3-2e94-4bae-a72e-7699a8ef6351
+      d4d02694-6803-4027-8824-60f180c9d203
+      d5123c29-7a24-4063-8e58-f7be38532416
+      dbcd6b70-4c39-4d53-bbee-ae9ad6b9e5e9
+      ddf7f856-ff6b-455f-ac8b-d0b981cc1e15
+      e705d8ca-0e61-4404-8b49-c126acbf65d3
+      e82c9813-35cf-46ae-8305-2db62eab5fd7
+      e8d95189-01ec-4cb9-8a12-3924987fb648
+      e8e9480b-921c-486f-8465-16b11d6265f7
+      ebf6ea0a-fa22-41bd-bc47-d1f1e904bb83
+      ec7d3fb7-ae1d-4cb5-8ab3-c6924edb1632
+      ee0310f1-b7b3-4ac2-bf10-22ca6d7ebe22
+      f11c64e8-6c5e-44f1-85f4-20902b6897dc
+      f1364471-ca5c-4e1c-b1f5-ade2b33041b5
+      f3a6a668-b1ad-46fc-9cfb-157b8067aa2d
+      f5a9fea4-47d5-4e7a-b530-ce8f46fd13cb
+      f79aebae-c458-41d3-a960-a614ee89f477
+      f850ba87-02a8-41c8-b5cf-ccef229fd590
+      fc0054a4-7107-4e4b-a91f-89f58d23ff70
+      fcfad7ef-09c8-4b3c-bb57-3624751f1eca
+      fe522e92-a6a9-4a1f-98e3-635a86b9d1e0
+      ff56a3c0-2dac-42f1-a902-929aaf3a905c
     )
   )
 )
