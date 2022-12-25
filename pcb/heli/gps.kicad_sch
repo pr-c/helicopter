@@ -688,7 +688,7 @@
     (uuid 5471ff0f-1b62-4332-bec3-f3a5e64359b2)
     (property "Reference" "U4" (id 0) (at 149.86 47.1002 0))
     (property "Value" "NEO-M9N-00B" (id 1) (at 149.86 49.6371 0))
-    (property "Footprint" "ICs:XCVR_NEO-M9N-00B" (id 2) (at 149.86 78.74 0)
+    (property "Footprint" "lib:XCVR_NEO-M9N-00B" (id 2) (at 149.86 78.74 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "https://content.u-blox.com/sites/default/files/NEO-M9N-00B_DataSheet_UBX-19014285.pdf" (id 3) (at 149.86 78.74 0)

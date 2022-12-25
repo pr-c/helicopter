@@ -3610,7 +3610,7 @@
       (reference "U3") (unit 1) (value "STM32F103CBTx") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
     )
     (path "/ff163e09-1c9a-4e9f-9fc2-cd2f8ec1c6f1/5471ff0f-1b62-4332-bec3-f3a5e64359b2"
-      (reference "U4") (unit 1) (value "NEO-M9N-00B") (footprint "ICs:XCVR_NEO-M9N-00B")
+      (reference "U4") (unit 1) (value "NEO-M9N-00B") (footprint "lib:XCVR_NEO-M9N-00B")
     )
     (path "/8972c389-56a6-466a-9271-66b0ec918c0e/0f621026-af3c-4b17-b229-808a3d82cc89"
       (reference "U5") (unit 1) (value "NRF24L01") (footprint "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm")

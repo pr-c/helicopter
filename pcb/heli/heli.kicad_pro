@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.18
+          "min_clearance": 0.15
         }
       },
       "diff_pair_dimensions": [
@@ -57,7 +57,9 @@
       ],
       "drc_exclusions": [
         "clearance|59464748|29233551|f61d3364-259e-4a77-a552-d30cf282f8a8|648efbe1-e204-4566-8f20-d63f96ef7364",
-        "clearance|60772703|30281421|a5baef4d-0a23-439b-83f0-13faed7d420e|f36cc7af-2f23-47c8-8411-2e71938c2a48"
+        "clearance|60772703|30281421|a5baef4d-0a23-439b-83f0-13faed7d420e|f36cc7af-2f23-47c8-8411-2e71938c2a48",
+        "clearance|63372365|30747970|ae967726-c25b-4e20-acc0-9528ae384d60|fc6f3ad7-bc9b-4d1e-a649-74c021d8ec22",
+        "clearance|63372365|33046670|340a562b-3961-4473-acaf-e0fb525ed996|9415d2a9-0603-4bc0-803c-c4c640c54b30"
       ],
       "meta": {
         "version": 2
@@ -481,7 +483,19 @@
     "meta": {
       "version": 2
     },
-    "net_colors": null
+    "net_colors": {
+      "/PWM1": "rgb(0, 194, 0)",
+      "/PWM2": "rgb(0, 194, 0)",
+      "/SERVO1": "rgb(0, 194, 0)",
+      "/SERVO2": "rgb(0, 194, 0)",
+      "I2C_SCL": "rgb(255, 255, 0)",
+      "I2C_SDA": "rgb(255, 255, 0)",
+      "SPI_MISO": "rgb(255, 0, 0)",
+      "SPI_MOSI": "rgb(255, 0, 0)",
+      "SPI_SCK": "rgb(255, 0, 0)",
+      "SWCLK": "rgb(0, 0, 255)",
+      "SWDIO": "rgb(0, 0, 255)"
+    }
   },
   "pcbnew": {
     "last_paths": {

@@ -541,6 +541,11 @@
     (uuid ff0b20de-76d0-44ff-9170-85504a2d9cfb)
   )
 
+  (label "M-" (at 76.2 52.07 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 65634b9f-4718-4839-bc48-63e59f0d1b41)
+  )
+
   (global_label "7.4V" (shape input) (at 54.61 49.53 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 785e1a62-1fd4-4ee0-9c6c-e6c4e0503815)
