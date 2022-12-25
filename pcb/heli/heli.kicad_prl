@@ -62,8 +62,8 @@
       35,
       36
     ],
-    "visible_layers": "000d000_ffffffff",
-    "zone_display_mode": 1
+    "visible_layers": "000d000_fffffff9",
+    "zone_display_mode": 0
   },
   "meta": {
     "filename": "heli.kicad_prl",
