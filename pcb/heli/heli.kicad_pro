@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.62,
-          "width": 0.56
+          "drill": 1.1,
+          "height": 2.0,
+          "width": 1.905
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -56,10 +56,8 @@
         }
       ],
       "drc_exclusions": [
-        "clearance|59464748|29233551|f61d3364-259e-4a77-a552-d30cf282f8a8|648efbe1-e204-4566-8f20-d63f96ef7364",
-        "clearance|60772703|30281421|a5baef4d-0a23-439b-83f0-13faed7d420e|f36cc7af-2f23-47c8-8411-2e71938c2a48",
-        "clearance|63372365|30747970|ae967726-c25b-4e20-acc0-9528ae384d60|fc6f3ad7-bc9b-4d1e-a649-74c021d8ec22",
-        "clearance|63372365|33046670|340a562b-3961-4473-acaf-e0fb525ed996|9415d2a9-0603-4bc0-803c-c4c640c54b30"
+        "clearance|63372365|35218370|ae967726-c25b-4e20-acc0-9528ae384d60|fc6f3ad7-bc9b-4d1e-a649-74c021d8ec22",
+        "clearance|63372365|37517070|340a562b-3961-4473-acaf-e0fb525ed996|9415d2a9-0603-4bc0-803c-c4c640c54b30"
       ],
       "meta": {
         "version": 2
@@ -125,8 +123,9 @@
       },
       "track_widths": [
         0.0,
+        0.25,
+        0.3,
         0.5,
-        0.56,
         1.0,
         2.0
       ],
@@ -488,8 +487,17 @@
       "/PWM2": "rgb(0, 194, 0)",
       "/SERVO1": "rgb(0, 194, 0)",
       "/SERVO2": "rgb(0, 194, 0)",
+      "3.3V": "rgb(255, 0, 255)",
+      "7.4V": "rgb(255, 0, 255)",
+      "GND": "rgb(255, 0, 255)",
+      "GPS_CSN": "rgb(255, 153, 0)",
+      "GPS_NRST": "rgb(255, 153, 0)",
       "I2C_SCL": "rgb(255, 255, 0)",
       "I2C_SDA": "rgb(255, 255, 0)",
+      "RADIO_CE": "rgb(255, 153, 0)",
+      "RADIO_CSN": "rgb(255, 153, 0)",
+      "RADIO_IRQ": "rgb(255, 153, 0)",
+      "RESET": "rgb(255, 153, 0)",
       "SPI_MISO": "rgb(255, 0, 0)",
       "SPI_MOSI": "rgb(255, 0, 0)",
       "SPI_SCK": "rgb(255, 0, 0)",
