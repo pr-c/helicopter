@@ -472,6 +472,11 @@
     (uuid ff5943f5-eaba-4222-870c-69b091abd0bd)
   )
 
+  (label "GPS50ohms" (at 109.855 66.04 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 5ff7385f-7c16-476d-bc78-9fd0076e2b0b)
+  )
+
   (global_label "3.3V" (shape input) (at 190.5 53.34 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 3326205c-02c0-45cf-96c0-4eb55d36b68e)
@@ -578,7 +583,7 @@
     (property "STANDARD" "Manufacturer Recommendations" (id 7) (at 105.41 66.04 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
-    (property "DIGIKEY" "2057-PH1-10-UA-ND" (id 8) (at 105.41 66.04 0)
+    (property "DIGIKEY" "343-CONMHF4-SMD-G-TCT-ND" (id 8) (at 105.41 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d01faa80-5755-410c-a4c7-9d148b26d79b))

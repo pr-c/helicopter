@@ -624,7 +624,7 @@
     (uuid f2b244c7-1782-4da4-9d8b-651c41c735d8)
   )
 
-  (label "50ohm" (at 182.88 63.5 180)
+  (label "RADIO50ohm" (at 182.88 63.5 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid fdf2cea2-fb78-492e-af6c-257cd3a19e12)
   )
