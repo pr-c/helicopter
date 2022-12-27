@@ -55,7 +55,10 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|63372365|35218370|ae967726-c25b-4e20-acc0-9528ae384d60|fc6f3ad7-bc9b-4d1e-a649-74c021d8ec22",
+        "clearance|63372365|37517070|340a562b-3961-4473-acaf-e0fb525ed996|9415d2a9-0603-4bc0-803c-c4c640c54b30"
+      ],
       "meta": {
         "version": 2
       },
@@ -490,8 +493,6 @@
       "GND": "rgb(255, 0, 255)",
       "GPS_CSN": "rgb(255, 153, 0)",
       "GPS_NRST": "rgb(255, 153, 0)",
-      "I2C_SCL": "rgb(255, 255, 0)",
-      "I2C_SDA": "rgb(255, 255, 0)",
       "RADIO_CE": "rgb(255, 153, 0)",
       "RADIO_CSN": "rgb(255, 153, 0)",
       "RADIO_IRQ": "rgb(255, 153, 0)",
