@@ -1,4 +1,4 @@
-20944846117722609
+20946518274558046
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -87457,6 +87457,13 @@ XDCR_BMI270
 0
 14
 14
+lib
+XDCR_BMM150
+
+
+0
+12
+12
 sparkfun
 ANT-2.4GHZ-6.5X2.2MM
 2.45GHZ CHIP ANTENNA - 6.5 X 2.2 X 1.0 MM
