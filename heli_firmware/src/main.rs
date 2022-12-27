@@ -59,6 +59,7 @@ fn main() -> ! {
     let ce_pin = gpioa.pa9.into_push_pull_output(&mut gpioa.crh);
 
     let spi = Spi::spi1(device_peripherals.SPI1, (spi_sck_pin, spi_miso_pin, spi_mosi_pin), &mut afio.mapr, SPI_MODE, 1.MHz(), clock);
+    let spi2 = Spi::spi2(device_peripherals.SPI2, (spi_sck_pin, spi_miso_pin, spi_mosi_pin),  SPI_MODE, 1.MHz(), clock);
 
     let mut pwm = Timer::new(device_peripherals.TIM2, &clock).pwm_hz::<Tim2NoRemap, _, _>((pwm_pin_pa0, pwm_pin_pa1), &mut afio.mapr, 1.kHz());
     pwm.enable(Channel::C1);
