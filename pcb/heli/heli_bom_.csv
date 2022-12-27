@@ -1,43 +1,43 @@
-Component,Description,Part,Part Lib,References,Footprint Lib,Sheetpath,Quantity Per PCB,digikey
-1,Unpolarized capacitor,C,Device,C22,Capacitor_SMD,/Radio/,1,311-3613-1-ND
-2,Unpolarized capacitor,C,Device,C21,Capacitor_SMD,/Radio/,1,311-3323-1-ND
-3,Unpolarized capacitor,C,Device,C19,Capacitor_SMD,/Radio/,1,311-1367-1-ND
-4,Unpolarized capacitor,C,Device,C6 C7 C17 C20,Capacitor_SMD,/,4,738-CML0603C0G300JT50VCT-ND
-5,Unpolarized capacitor,C,Device,C24,Capacitor_SMD,/Radio/,1,732-8001-1-ND
-6,Unpolarized capacitor,C,Device,C18,Capacitor_SMD,/Radio/,1,732-7503-1-ND
-7,Unpolarized capacitor,C,Device,C2 C23,Capacitor_SMD,/,2,732-7933-1-ND
-8,Unpolarized capacitor,C,Device,C16,Capacitor_SMD,/Radio/,1,732-8010-1-ND
-9,Unpolarized capacitor,C,Device,C4 C5 C9 C10 C11 C12 C13 C15 C25 C26 C27 C29,Capacitor_SMD,/,12,1276-1935-1-ND
-10,Unpolarized capacitor,C,Device,C28,Capacitor_SMD,/GPS/,1,-
-11,Polarized capacitor,C_Polarized,Device,C1,Capacitor_SMD,/,1,-
-12,Unpolarized capacitor,C,Device,C14,Capacitor_SMD,/,1,-
-13,Polarized capacitor,C_Polarized,Device,C3,Capacitor_SMD,/,1,-
-14,Unpolarized capacitor,C,Device,C8,Capacitor_SMD,/,1,732-8003-1-ND
-15,"40V 1A Schottky Barrier Rectifier Diode, DO-41",1N5819,Diode,D2 D3,Diode_SMD,/Main Motor/,2,1655-1N5819WCT-ND
-16,Light emitting diode,LED,Device,D1,LED_SMD,/,1,160-1436-1-ND
-17,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x02_Male,Connector,J1,Connector_PinHeader_2.54mm,/,1,2057-PH1-10-UA-ND
-18,,CONMHF4-SMD-G-T,lib,J3,,/GPS/,1,343-CONMHF4-SMD-G-TCT-ND
-19,"Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x05_Male,Connector,J2,Connector_PinHeader_2.54mm,/,1,2057-PH1-10-UA-ND
-20,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03_Male,Connector,J4 J5,Connector_PinHeader_2.54mm,/,2,2057-PH1-10-UA-ND
-21,Inductor,L,Device,L2,Inductor_SMD,/Radio/,1,732-7447840027GCT-ND
-22,Inductor,L,Device,L3,Inductor_SMD,/Radio/,1,732-7447840039GCT-ND
-23,Inductor,L,Device,L1,Inductor_SMD,/Radio/,1,732-7847803820CT-ND
-24,DC Motor,Motor_DC,Motor,M1 M2,Connector_PinHeader_2.54mm,/Main Motor/,2,2057-PH1-10-UA-ND
-25,"0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92",BC547,Transistor_BJT,Q2 Q4,Package_TO_SOT_THT,/Main Motor/,2,-
-26,"47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB",IRLZ44N,Transistor_FET,Q1 Q3 Q5,Package_TO_SOT_THT,/,3,-
-27,Resistor,R,Device,R4,Resistor_SMD,/,1,311-69.8HRCT-ND
-28,Resistor,R,Device,R1 R2 R5 R7 R10 R13 R15,Resistor_SMD,/,7,1292-WR06X103JTLCT-ND
-29,Resistor,R,Device,R9 R12,Resistor_SMD,/Main Motor/,2,RMCF0603JT20K0CT-ND
-30,Resistor,R,Device,R3,Resistor_SMD,/Radio/,1,1292-WR06X2202FTLCT-ND
-31,Resistor,R,Device,R6 R8 R11 R14,Resistor_SMD,/Radio/,4,1292-WR06X105JTLCT-ND
-32,"Push button switch, generic, two pins",SW_Push,Switch,SW1,Button_Switch_SMD,/,1,EG5353CT-ND
-33,"1A 20V Fixed LDO Linear Regulator, 3.3V, SOT-89/SOT-223/TO-220/TO-252/TO-263",AZ1117-3.3,Regulator_Linear,U1,Package_TO_SOT_SMD,/,1,31-AZ1117CH2-3.3TRG1CT-ND
-34,"InvenSense 6-Axis Motion Sensor, Gyroscope, Accelerometer, I2C",MPU-6050,Sensor_Motion,U2,Sensor_Motion,/,1,1428-1007-1-ND
-35,,NEO-M9N-00B,ICs,U4,lib,/GPS/,1,672-NEO-M9N-00BCT-ND
-36,"Ultra low power 2.4GHz RF Transceiver, QFN-20",NRF24L01,RF,U5,Package_DFN_QFN,/Radio/,1,1490-1019-ND
-37,"ARM Cortex-M3 MCU, 128KB flash, 20KB RAM, 72MHz, 2-3.6V, 37 GPIO, LQFP-48",STM32F103CBTx,MCU_ST_STM32F1,U3,Package_QFP,/,1,497-11518-ND
-38,Two pin crystal,Crystal,Device,Y2,Crystal,/Radio/,1,XC1793CT-ND
-39,Two pin crystal,Crystal,Device,Y1,Crystal,/,1,535-14944-1-ND
+Component,Description,Part,Part Lib,References,Footprint Lib,Sheetpath,Quantity Per PCB,digikey,package
+1,Unpolarized capacitor,C,Device,C22,Capacitor_SMD,/Radio/,1,311-3613-1-ND,
+2,Unpolarized capacitor,C,Device,C21,Capacitor_SMD,/Radio/,1,311-3323-1-ND,
+3,Unpolarized capacitor,C,Device,C19,Capacitor_SMD,/Radio/,1,311-1367-1-ND,
+4,Unpolarized capacitor,C,Device,C6 C7 C17 C20,Capacitor_SMD,/,4,738-CML0603C0G300JT50VCT-ND,
+5,Unpolarized capacitor,C,Device,C24,Capacitor_SMD,/Radio/,1,732-8001-1-ND,
+6,Unpolarized capacitor,C,Device,C18,Capacitor_SMD,/Radio/,1,732-7503-1-ND,
+7,Unpolarized capacitor,C,Device,C23,Capacitor_SMD,/Radio/,1,732-7933-1-ND,
+8,Unpolarized capacitor,C,Device,C16,Capacitor_SMD,/Radio/,1,732-8010-1-ND,
+9,Unpolarized capacitor,C,Device,C2 C4 C5 C8 C9 C10 C11 C12 C13 C15 C25 C26 C27 C29,Capacitor_SMD,/IMU/,14,1276-1935-1-ND,
+10,Unpolarized capacitor,C,Device,C28,Capacitor_SMD,/GPS/,1,-,
+11,Polarized capacitor,C_Polarized,Device,C1,Capacitor_SMD,/,1,-,
+12,Unpolarized capacitor,C,Device,C14,Capacitor_SMD,/,1,-,
+13,Polarized capacitor,C_Polarized,Device,C3,Capacitor_SMD,/,1,-,
+14,"40V 1A Schottky Barrier Rectifier Diode, DO-41",1N5819,Diode,D2 D3,Diode_SMD,/Main Motor/,2,1655-1N5819WCT-ND,
+15,Light emitting diode,LED,Device,D1,LED_SMD,/,1,160-1436-1-ND,
+16,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x02_Male,Connector,J1,Connector_PinHeader_2.54mm,/,1,2057-PH1-10-UA-ND,
+17,,CONMHF4-SMD-G-T,lib,J3,,/GPS/,1,343-CONMHF4-SMD-G-TCT-ND,
+18,"Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x05_Male,Connector,J2,Connector_PinHeader_2.54mm,/,1,2057-PH1-10-UA-ND,
+19,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03_Male,Connector,J4 J5,Connector_PinHeader_2.54mm,/,2,2057-PH1-10-UA-ND,
+20,Inductor,L,Device,L2,Inductor_SMD,/Radio/,1,732-7447840027GCT-ND,
+21,Inductor,L,Device,L3,Inductor_SMD,/Radio/,1,732-7447840039GCT-ND,
+22,Inductor,L,Device,L1,Inductor_SMD,/Radio/,1,732-7847803820CT-ND,
+23,DC Motor,Motor_DC,Motor,M1 M2,Connector_PinHeader_2.54mm,/Main Motor/,2,2057-PH1-10-UA-ND,
+24,"0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92",BC547,Transistor_BJT,Q2 Q4,Package_TO_SOT_THT,/Main Motor/,2,-,
+25,"47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB",IRLZ44N,Transistor_FET,Q1 Q3 Q5,Package_TO_SOT_THT,/,3,-,
+26,Resistor,R,Device,R4,Resistor_SMD,/,1,311-69.8HRCT-ND,
+27,Resistor,R,Device,R5 R7 R10 R13 R15,Resistor_SMD,/,5,1292-WR06X103JTLCT-ND,
+28,Resistor,R,Device,R9 R12,Resistor_SMD,/Main Motor/,2,RMCF0603JT20K0CT-ND,
+29,Resistor,R,Device,R3,Resistor_SMD,/Radio/,1,1292-WR06X2202FTLCT-ND,
+30,Resistor,R,Device,R6 R8 R11 R14 R16,Resistor_SMD,/Radio/,5,1292-WR06X105JTLCT-ND,
+31,"Push button switch, generic, two pins",SW_Push,Switch,SW1,Button_Switch_SMD,/,1,EG5353CT-ND,
+32,"1A 20V Fixed LDO Linear Regulator, 3.3V, SOT-89/SOT-223/TO-220/TO-252/TO-263",AZ1117-3.3,Regulator_Linear,U1,Package_TO_SOT_SMD,/,1,31-AZ1117CH2-3.3TRG1CT-ND,
+33,,BMI270,lib,U2,,/IMU/,1,828-1091-1-ND,
+34,,BMM150,lib,U6,lib,/Magnetic Sensor/,1,828-1044-1-ND,WLCSP-12 Bosch
+35,,NEO-M9N-00B,ICs,U4,lib,/GPS/,1,672-NEO-M9N-00BCT-ND,
+36,"Ultra low power 2.4GHz RF Transceiver, QFN-20",NRF24L01,RF,U5,Package_DFN_QFN,/Radio/,1,1490-1019-ND,
+37,"ARM Cortex-M3 MCU, 128KB flash, 20KB RAM, 72MHz, 2-3.6V, 37 GPIO, LQFP-48",STM32F103CBTx,MCU_ST_STM32F1,U3,Package_QFP,/,1,497-11518-ND,
+38,Two pin crystal,Crystal,Device,Y2,Crystal,/Radio/,1,XC1793CT-ND,
+39,Two pin crystal,Crystal,Device,Y1,Crystal,/,1,535-14944-1-ND,
 
 
 
@@ -51,6 +51,6 @@ Total components:,70
 Schematic Version:,
 Schematic Date:,
 PCB Variant:,default
-BoM Date:,Mon 26 Dec 2022 02:21:37 PM CET
+BoM Date:,Tue 27 Dec 2022 07:01:08 PM CET
 Schematic Source:,heli.kicad_sch
 KiCad Version:,Eeschema (6.0.10)
