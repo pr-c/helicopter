@@ -781,7 +781,7 @@
     (property "Footprint" "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm" (id 2) (at 116.84 43.18 0)
       (effects (font (size 1.27 1.27) italic) (justify left) hide)
     )
-    (property "Datasheet" "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" (id 3) (at 111.76 60.96 0)
+    (property "Datasheet" "https://www.sparkfun.com/datasheets/Components/SMD/nRF24L01Pluss_Preliminary_Product_Specification_v1_0.pdf" (id 3) (at 111.76 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "DIGIKEY" "1490-1019-ND" (id 4) (at 111.76 63.5 0)
