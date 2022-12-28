@@ -23,7 +23,7 @@ Component,Description,Part,Part Lib,References,Footprint Lib,Sheetpath,Quantity 
 22,Inductor,L,Device,L1,Inductor_SMD,/Radio/,1,732-7847803820CT-ND,
 23,DC Motor,Motor_DC,Motor,M1 M2,Connector_PinHeader_2.54mm,/Main Motor/,2,2057-PH1-10-UA-ND,
 24,"0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92",BC547,Transistor_BJT,Q2 Q4,Package_TO_SOT_THT,/Main Motor/,2,-,
-25,"47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB",IRLZ44N,Transistor_FET,Q1 Q3 Q5,Package_TO_SOT_THT,/,3,-,
+25,"47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB",IRLZ44N,Transistor_FET,Q3 Q5,Package_TO_SOT_THT,/Main Motor/,2,-,
 26,Resistor,R,Device,R4,Resistor_SMD,/,1,311-69.8HRCT-ND,
 27,Resistor,R,Device,R5 R7 R10 R13 R15,Resistor_SMD,/,5,1292-WR06X103JTLCT-ND,
 28,Resistor,R,Device,R9 R12,Resistor_SMD,/Main Motor/,2,RMCF0603JT20K0CT-ND,
@@ -44,13 +44,13 @@ Component,Description,Part,Part Lib,References,Footprint Lib,Sheetpath,Quantity 
 
 
 Component Groups:,39
-Component Count:,70
-Fitted Components:,70
+Component Count:,69
+Fitted Components:,69
 Number of PCBs:,1
-Total components:,70
+Total components:,69
 Schematic Version:,
 Schematic Date:,
 PCB Variant:,default
-BoM Date:,Tue 27 Dec 2022 07:01:08 PM CET
+BoM Date:,Wed 28 Dec 2022 02:56:05 PM CET
 Schematic Source:,heli.kicad_sch
 KiCad Version:,Eeschema (6.0.10)

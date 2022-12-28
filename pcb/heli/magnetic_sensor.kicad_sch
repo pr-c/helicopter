@@ -384,7 +384,7 @@
     (property "Digikey" "828-1044-1-ND" (id 6) (at 80.01 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "DIGIKEY" "828-1044-1-ND" (id 6) (at 80.01 58.42 0)
+    (property "DIGIKEY" "828-1044-1-ND" (id 7) (at 80.01 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "A1" (uuid 275156f0-f264-4c2d-992d-da7d0269f5f0))
