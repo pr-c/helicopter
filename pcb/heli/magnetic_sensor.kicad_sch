@@ -381,7 +381,7 @@
     (property "PACKAGE" "WLCSP-12 Bosch" (id 5) (at 80.01 58.42 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
-    (property "Digikey" "828-1044-1-ND" (id 5) (at 80.01 58.42 0)
+    (property "Digikey" "828-1044-1-ND" (id 6) (at 80.01 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "DIGIKEY" "828-1044-1-ND" (id 6) (at 80.01 58.42 0)
